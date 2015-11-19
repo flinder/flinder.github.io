@@ -446,6 +446,12 @@ a:hover {
     height: auto;
 }
 
+#contactImage img {    
+    margin-bottom: 50px;
+    max-width: 100%;
+    height: auto;
+}
+
 #footer ul li {
     display: inline;
     margin: 0 2rem 0 0;
@@ -460,3 +466,4 @@ a:hover {
 .bottom-space {
     margin-bottom: 20rem
 }
+
