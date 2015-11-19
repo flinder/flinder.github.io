@@ -428,8 +428,8 @@ there.
 
 #nav ul li {
     display: inline;
-    margin: 0 20px 0 0;
-    margin-bottom: 130px;
+    margin: 0 2rem 0 0;
+    margin-bottom: 2rem;
 }
 
 a {
@@ -444,4 +444,19 @@ a:hover {
     margin-bottom: 50px;
     max-width: 100%;
     height: auto;
+}
+
+#footer ul li {
+    display: inline;
+    margin: 0 2rem 0 0;
+    margin-bottom: 2rem;
+}
+
+#footer {
+    border-top: 1px solid #999;
+    margin-top: 3rem
+}
+
+.bottom-space {
+    margin-bottom: 20rem
 }
