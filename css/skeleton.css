@@ -160,9 +160,14 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+    text-decoration: none;
+    color: #999; 
+}
 a:hover {
-  color: #0FA0CE; }
+  color: #0FA0CE; 
+  text-decoration: underline;
+}
+
 
 
 /* Buttons
@@ -432,14 +437,6 @@ there.
     margin-bottom: 2rem;
 }
 
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-
 #headerImage img {
     margin-bottom: 50px;
     max-width: 100%;
@@ -463,14 +460,22 @@ a:hover {
     margin-top: 3rem
 }
 
+#header {
+    border-style: solid;
+    border-color: #999;
+    border-width: 0px 0px 1px 0px;
+}
+
 .bottom-space {
     margin-bottom: 10rem
 }
 
+/* Stuff for research page */
+
 .research.post {
     border-style: solid;
     border-color: #999;
-    border-width: 1px;
+    border-width: 0px 0px 0px 0px;
     padding: 2px;
 }
 
@@ -478,4 +483,27 @@ a:hover {
     margin-bottom: 20px;
     max-width: 100%;
     height: 200px;
+}
+
+.research.post h6 {
+    margin-bottom: 3rem;
+}
+
+.research.post a {
+    text-decoration: none;
+    color: #222;
+}
+
+.research.post a:hover {
+    text-decoration: underline;
+    color: #0FA0CE; 
+}
+
+.research.post p {
+    text-align: justify;
+}
+
+.research.row {
+    border-bottom: 1px #999 solid;
+    margin-bottom: 5rem;
 }
