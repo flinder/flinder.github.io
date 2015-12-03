@@ -3,20 +3,21 @@ layout: post
 title: "Blog"
 post_title: "UNIX Commandline Cheatsheet"
 date: 2015-12-01
-excerpt: "A little collection of basic UNIX commands, for my workshop 'Intro to Penn State high performance computing and UNIX command line'"
+image_source: /images/cline.png
+excerpt: "A little collection of basic UNIX commands, for my workshop <em>Intro to Penn State high performance computing and UNIX command line</em>"
 ---
 
 This is the cheatsheet accompanying a workshop I gave recently for the <a href="http://bdss.psu.edu">BDSS IGERT</a> trainees. 
 
 
 ##### Resources
-* Google
-* Software Carpentry Shell Novice Tutorial (they have other great tutorials as well)
-* Data Science at the Commandline
-* LCtHW Tutorial (covers Windows PowerShell in parallel)
-* Documentation 
+* [Software Carpentry Shell Novice Tutorial](http://swcarpentry.github.io/shell-novice/) (they have other great tutorials as well)
+* [Data Science at the Commandline](http://datascienceatthecommandline.com/)
+* [LCtHW Tutorial](http://cli.learncodethehardway.org/book/) (covers Windows PowerShell in parallel)
+* [Documentation](https://www.gnu.org/software/bash/manual/bash.html) 
 
 ##### Basic Commands
+
 
 ###### Filesystem
 * Directories in paths are connected by `/.`

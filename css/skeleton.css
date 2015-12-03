@@ -30,7 +30,8 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -450,7 +451,7 @@ there.
 }
 
 #contactImage img {    
-    margin-bottom: 50px;
+        margin-bottom: 50px;
     max-width: 60%;
     height: auto;
 }
@@ -523,3 +524,30 @@ there.
 .research.row {
     margin-bottom: 5rem;
 }
+
+
+/*---------------------------- Style for blog stuff */
+
+.blogListElement {
+    border-style: dotted;
+    border-color: #999;
+    border-width: 0px 0px 1px 0px;
+    padding: 2rem;   
+}
+
+.blogListElement a {
+    text-decoration: none;
+    color: #222;
+}
+
+.blogListElement a:hover {
+    text-decoration: underline;
+    color: #0FA0CE; 
+}
+
+.blogListImage {
+    max-width: 100%;
+    height: 150px;
+}
+
+
