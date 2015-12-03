@@ -2,7 +2,7 @@
 layout: post
 title: "Blog"
 post_title: "UNIX Commandline Cheatsheet"
-date: 2015-12-01
+date: 2015-12-02
 image_source: /images/cline.png
 excerpt: "A little collection of basic UNIX commands, for my workshop <em>Intro to Penn State high performance computing and UNIX command line</em>"
 ---
