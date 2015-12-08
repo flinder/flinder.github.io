@@ -531,7 +531,7 @@ there.
 .blogListElement {
     border-style: dotted;
     border-color: #999;
-    border-width: 0px 0px 1px 0px;
+    border-width: 1px 0px 0px 0px;
     padding: 2rem;   
 }
 
