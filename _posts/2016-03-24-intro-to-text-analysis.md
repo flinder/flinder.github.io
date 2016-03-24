@@ -10,11 +10,11 @@ excerpt: "A tutorial for the basics of computational text analysis. For absolute
 #### What, Why, for Who?
 This is a little tutorial I gave for my visualization class in the Geography Department at Penn State. I introduce the very basic steps that are necessary to get messy text collected online or in other places into a form to be usable for more sophisticated text analysis tools. There are a lot of great resources out there that explain all kinds of cool things that you can do with text, but there are a lot of nitty gritty details to consider before you can get started. As an example I use some twitter data I collected with the search term `Trump`.  
 
-There are a few tutorials for the basics of text analysis (e.g. see [here](), [here]() and [here]()), but they mostly are focused on R and use packages or modules that obscure what actually is happening under the hood. I prefer to demonstrate with basic (slow and not optimized) code what is happening; most of the steps are not very compicated anyway. 
+There are a few tutorials for the basics of text analysis, but they mostly are focused on R and use packages or modules that obscure what actually is happening under the hood. I prefer to demonstrate with basic (slow and not optimized) code what is happening; most of the steps are not very compicated anyway. 
 
 This tutorial is aimed at beginners in text analysis with little experience with computational tools. I provide actual example code that demonstrates how every idea would be realized. Everything is written in basic python. For those who are not familiar with programming I try to explain every step so you don't have to know python in order to follow. 
 
-You can find the whole tutorial as an ipython notebook on my [github page](INSERT LINK).
+You can find the whole tutorial as an ipython notebook and all the materials on my [github](https://github.com/flinder/flinder.github.io/tree/master/text_analysis_tutorial).
 
 #### Roadmap
 
@@ -48,7 +48,7 @@ In order to get to this matrix and especially to get to a usable matrix that is 
 - Text Preprocessing
 - Stemming and Lemmatization
 
-#### Loading Text, Encodings, Memory
+#### Loading Text, Memory
 
 For the rest of the tutorial we will be working with twitter data. I collected about 2000 tweets from the [Twitter Streaming API](https://dev.twitter.com/streaming/overview) ([This](http://adilmoujahid.com/posts/2014/07/twitter-analytics/) is a good tutorial on how to collect Twitter data with Python) using the search term `Trump`.
 
@@ -82,8 +82,6 @@ For this tutorial we only need the value of the `"text"` key, which contains the
 
 
 <pre><code class="python">import io 
-import json
-from pprint import pprint
 
 tweet_file_connection = io.open('data.json', mode='r', encoding='utf-8')
 </code></pre>
@@ -149,7 +147,7 @@ s = "It's just a movie Donald"
 # "match each character in this set of characters"
 vowels = '[aeiou]'
 
-# The sub() funciton in the re module allows us to substitute stuff for the 
+# The sub() function in the re module allows us to substitute stuff for the 
 # regular expression
 re.sub(pattern=vowels, repl="_", string=s)
 </code></pre>
@@ -263,11 +261,16 @@ print max_hand + ": " + str(handles[max_hand])
 print max_hash + ": " + str(hashtags[max_hash])
 </code></pre>
 
+<pre><code class="python">#Trump: 64
+@realDonaldTrump: 75
+</code></pre>
+
+
 #### Tokenization
 
-Most statistical text analysis is based on the 'bag-of-words' approach: It is assumed (clearly wrongly) information in documents is purely contained in the word counts of a document. Grammatical and syntactical structure is ignored. Let's first count all words in each document.
+Most statistical text analysis is based on the 'bag-of-words' approach: It is assumed information in documents is purely contained in the word counts of a document. Grammatical and syntactical structure is ignored. Through this assumption we clearly lose a lot of information. But it makes analysis of text tremendously easier and is sufficient in many situations. Let's first count all words in each document.
 
-To do this we have to split the document into discrete words, they can are also called 'tokens' and the process 'tokenization'. Here we simply split the string object, whenever there is a white space (you might already think of things that can go wrong here). There are more sophisticated methods to do this but for now it is sufficient. 
+To do this we have to split the document into discrete words, they are also called 'tokens' and the process 'tokenization'. Here we simply split the string object, whenever there is a white space (you might already think of things that can go wrong here). There are more sophisticated methods to do this but for now it is sufficient. 
  
 After obtaining tokens each document is represented as the count of each unique token in the document.
 
@@ -290,7 +293,7 @@ Output:
 <pre><code class="python">[u'@faineg', u'@JM_Ashby', u'NEVER', u'treat', u'your', u'opponents', u'with', u'humanity,', u"that's", u'just', u'weakness', u'and', u'ISIS', u'and/or', u'Trump', u'only', u'respects', u'STRENGTHs']
 </code></pre>
 
-This works. Now we just have to count how often each token appears per tweet and do it for all tweets.
+This works. Now we just have to count how often each token appears per tweet and do it for all tweets. After splitting them we will count how often every word appears and store it in a data structure called `dictionary`. A dictionary works like `json`, that is each entry of the dictionary consists of a key and a value. In our case its `'token': count`.
 
 <pre><code class="python"># Empty list to store the 'bag-of-words' representation of each tweet
 bow_tweets = []
@@ -328,7 +331,7 @@ Output:
 
 ##### Resources
 
-More sophisticated tokenizers can detect things like it's -> it is and deal correctly with tokenization. They are also able to separate sentences. For python there is the classic [nltk](http://www.nltk.org/) module ([here](http://textminingonline.com/dive-into-nltk-part-ii-sentence-tokenize-and-word-tokenize) is a tutorial on tokenization) and the faster [spaCy](https://spacy.io/). The [scikit-learn](http://scikit-learn.org/stable/) machine learning libraries also have tokenization tools, the [sklearn vectorizers](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html). In R you can use [tm](https://cran.r-project.org/web/packages/tm/index.html) or [quanteda](https://cran.rstudio.com/web/packages/quanteda/vignettes/quickstart.html).
+More sophisticated tokenizers can detect things like it's -> it is and deal correctly with punctuation. They are also able to separate sentences. For python there is the classic [nltk](http://www.nltk.org/) module ([here](http://textminingonline.com/dive-into-nltk-part-ii-sentence-tokenize-and-word-tokenize) is a tutorial on tokenization) and the faster [spaCy](https://spacy.io/). The [scikit-learn](http://scikit-learn.org/stable/) machine learning libraries also have tokenization tools, the [sklearn vectorizers](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html). In R you can use [tm](https://cran.r-project.org/web/packages/tm/index.html) or [quanteda](https://cran.rstudio.com/web/packages/quanteda/vignettes/quickstart.html).
 
 For simple tasks like this, there are also some really nice UNIX commandline tools. For exampl: [tr](https://en.wikipedia.org/wiki/Tr_(Unix) and [sed](http://www.grymoire.com/Unix/Sed.html). Check out [UNIX for poets](https://web.stanford.edu/class/cs124/kwc-unix-for-poets.pdf) too.
 
@@ -392,15 +395,14 @@ Let's make our first term document matrix first and then consider the problems.
 import pandas as pd # Module for dataframes
 
 # Create an empty dataframe to hold the data
-# Note that this is a very inefficient way to do this in practice 
+# Note that this is a very inefficient way to do this. In practice 
 # you wouldn't construct a data frame like this but it's good for 
 # explaining the concept
 dtm = pd.DataFrame(columns = list(vocabulary))
 
 i = 0
 for tweet in bow_tweets:
-    
-    
+        
     vector = []
     # For each word in the vocabulary check if it is in the tweet
     # if yes, append the count obtained befoe if not append a 0
@@ -420,8 +422,9 @@ for tweet in bow_tweets:
 print dtm.shape
 </code></pre>
 
-    (1521, 7739)
+<pre><code class="python">(1521, 7739)
 
+</code></pre>
 
 So now we have a matrix of shape 1521 (number of tweets/documents) x 7739 (number of unique terms). Let's see what this matrix looks like:
 
@@ -443,19 +446,8 @@ dtm.head()
       <th>dogshit,</th>
       <th>Cruz.....for</th>
       <th>@UTHornsRawk</th>
-      <th>candidates.</th>
-      <th>https://t.co/nth63AgX5C</th>
+      <th>candidates.</th> 
       <th>...</th>
-      <th>“Democrats</th>
-      <th>kinda</th>
-      <th>musulmanes,</th>
-      <th>https://t.co/CTBIkN50VE</th>
-      <th>coffee.</th>
-      <th>Garbage</th>
-      <th>metà,</th>
-      <th>Contributor</th>
-      <th>understand</th>
-      <th>Adams:</th>
     </tr>
   </thead>
   <tbody>
@@ -470,18 +462,7 @@ dtm.head()
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>1</th>
@@ -494,18 +475,7 @@ dtm.head()
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>2</th>
@@ -518,19 +488,8 @@ dtm.head()
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
+   </tr>
     <tr>
       <th>3</th>
       <td>0</td>
@@ -542,19 +501,8 @@ dtm.head()
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
+   </tr>
     <tr>
       <th>4</th>
       <td>0</td>
@@ -566,24 +514,12 @@ dtm.head()
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
+   </tr>
   </tbody>
 </table>
 <p>5 rows × 7739 columns</p>
 </div>
-
 
 
 It's all zeros! Let's see how bad it really is:
@@ -599,12 +535,10 @@ tot = 1521 * 7739
 1 - float(n_non_zero) / float(tot)
 </code></pre>
 
-
 Output:
 <pre><code class="python">0.9980055252650599
 </code></pre>
-
-
+{
 It is really bad. 99.8% of our matrix is zeros. That means we generated a very big matrix that stores very little information. And most terms only occur once in one document, are therefore useless for comparative analysis. This problem leads us to the next section.
 
 Before that, some resources for term document matrix generation:
@@ -770,8 +704,7 @@ def generate_dtm(tweet_list):
 </code></pre>
 
 Ouput:
-<pre><code class="python">
-(1521, 3308)
+<pre><code class="python">(1521, 3308)
 </code></pre>
 
 This reduced the number of words by a lot. From over 7000 to 3300! But we can do better. We still didn't solve the problem of gramatical inflections, plurals, etc.
@@ -973,17 +906,7 @@ This looks a lot more sensible than what we saw on the first try.
       <th>hate</th>
       <th>increase</th>
       <th>...</th>
-      <th>veil</th>
-      <th>gooooooo</th>
-      <th>baker</th>
-      <th>rule</th>
-      <th>cleve</th>
-      <th>determination</th>
-      <th>yell</th>
-      <th>jivin</th>
-      <th>defend</th>
-      <th>simpson</th>
-    </tr>
+   </tr>
   </thead>
   <tbody>
     <tr>
@@ -999,16 +922,6 @@ This looks a lot more sensible than what we saw on the first try.
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1023,17 +936,7 @@ This looks a lot more sensible than what we saw on the first try.
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
+   </tr>
     <tr>
       <th>2</th>
       <td>1</td>
@@ -1047,17 +950,7 @@ This looks a lot more sensible than what we saw on the first try.
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
+   </tr>
     <tr>
       <th>3</th>
       <td>1</td>
@@ -1071,17 +964,7 @@ This looks a lot more sensible than what we saw on the first try.
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
+   </tr>
     <tr>
       <th>4</th>
       <td>0</td>
@@ -1095,17 +978,7 @@ This looks a lot more sensible than what we saw on the first try.
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
+   </tr>
   </tbody>
 </table>
 <p>5 rows × 2805 columns</p>
