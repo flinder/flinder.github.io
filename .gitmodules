@@ -1,3 +1,3 @@
 [submodule "local_alignment_visual"]
-	path = local_alignment_visual
+	path = resources/local_alignment_visual
 	url = https://github.com/flinder/local_alignment_visual.git
