@@ -1,3 +1,5 @@
 _site/
 .jekyll-metadata
 .DS_Store
+conversion.html
+convert_cv.sh
