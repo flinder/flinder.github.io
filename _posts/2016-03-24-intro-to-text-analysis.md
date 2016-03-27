@@ -8,6 +8,7 @@ excerpt: "A tutorial for the basics of computational text analysis. For absolute
 ---
 
 #### What, Why, for Who?
+<hr/>
 This is a little tutorial I gave for my visualization class in the Geography Department at Penn State. I introduce the very basic steps that are necessary to get messy text collected online or in other places into a form to be usable for more sophisticated text analysis tools. There are a lot of great resources out there that explain all kinds of cool things that you can do with text, but there are a lot of nitty gritty details to consider before you can get started. As an example I use some twitter data I collected with the search term `Trump`.  
 
 There are a few tutorials for the basics of text analysis, but they mostly are focused on R and use packages or modules that obscure what actually is happening under the hood. I prefer to demonstrate with basic (slow and not optimized) code what is happening; most of the steps are not very compicated anyway. 
@@ -17,7 +18,7 @@ This tutorial is aimed at beginners in text analysis with little experience with
 You can find the whole tutorial as an ipython notebook and all the materials on my [github](https://github.com/flinder/flinder.github.io/tree/master/text_analysis_tutorial).
 
 #### Roadmap
-
+<hr/>
 To get from text that you find in the real world, to something you can work with requires many steps. Which ones you take will also depend heavily on the task you want to acomplish in the end. It is therefore hard to give a general tutorial that will work in every scenario. But many steps are required in every application so I will discuss the most important ones.
 
 In this tutorial I explain how to get from a text corpus (collection of documents) to a (usable) document term matrix (DTM). A lot (but not all) statistical analyses of text are based on DTMs. The core idea is to assume that all the information in a document is contained in the frequency of each word. Then each document is represented as a vector of length `v`, where `v` is the number of unique words in the whole corpus. Each element of the vector gives a count (or other measure) of how often the word appears in the document. The DTM is then a matrix where each row is a document vector. 
@@ -49,6 +50,7 @@ In order to get to this matrix and especially to get to a usable matrix that is 
 - Stemming and Lemmatization
 
 #### Loading Text, Memory
+<hr/>
 
 For the rest of the tutorial we will be working with twitter data. I collected about 2000 tweets from the [Twitter Streaming API](https://dev.twitter.com/streaming/overview) ([This](http://adilmoujahid.com/posts/2014/07/twitter-analytics/) is a good tutorial on how to collect Twitter data with Python) using the search term `Trump`.
 
@@ -79,6 +81,7 @@ The data is in json format. Each json document is surrounded by `{}` and has key
 For this tutorial we only need the value of the `"text"` key, which contains the text the user wrote in her tweet. We will therefore load only one tweet at a time, extract the text and discard all the other information.
 
 #### Retrieving information from tweets 
+<hr/>
 
 
 <pre><code class="python">import io 
@@ -122,6 +125,7 @@ Output:
 It did we collected 1521 tweets and below we can see the text of the first two.
 
 #### Manipulating Text: Regular Expressions
+<hr/>
 
 Regular expressions are basically templates that can be used to match character sequences. You have probably used them. For example when you type a search into a search engine you can use the `*` to match several terms with one query. For example `read*` would match `reading`, `reader`, `readings`, `reads`, etc. In this case `*` is a regular expression that says 'match every character except a space'. 
 
@@ -160,6 +164,7 @@ Output:
 This worked well. We saw that the `[` `]` where key to do this. There are a lot of these special characters, which you just have to look up. Here are some of the most important basics:
 
 #### Some basic expressions
+<hr/>
 
 - `[]`: A set of characters/expressions. E.g. `[A-Z]` matches all upper case letters
 - `.`: Matches everything
@@ -267,6 +272,7 @@ print max_hash + ": " + str(hashtags[max_hash])
 
 
 #### Tokenization
+<hr/>
 
 Most statistical text analysis is based on the 'bag-of-words' approach: It is assumed information in documents is purely contained in the word counts of a document. Grammatical and syntactical structure is ignored. Through this assumption we clearly lose a lot of information. But it makes analysis of text tremendously easier and is sufficient in many situations. Let's first count all words in each document.
 
@@ -330,12 +336,14 @@ Output:
 </code></pre>
 
 ##### Resources
+<hr/>
 
 More sophisticated tokenizers can detect things like it's -> it is and deal correctly with punctuation. They are also able to separate sentences. For python there is the classic [nltk](http://www.nltk.org/) module ([here](http://textminingonline.com/dive-into-nltk-part-ii-sentence-tokenize-and-word-tokenize) is a tutorial on tokenization) and the faster [spaCy](https://spacy.io/). The [scikit-learn](http://scikit-learn.org/stable/) machine learning libraries also have tokenization tools, the [sklearn vectorizers](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html). In R you can use [tm](https://cran.r-project.org/web/packages/tm/index.html) or [quanteda](https://cran.rstudio.com/web/packages/quanteda/vignettes/quickstart.html).
 
 For simple tasks like this, there are also some really nice UNIX commandline tools. For exampl: [tr](https://en.wikipedia.org/wiki/Tr_(Unix) and [sed](http://www.grymoire.com/Unix/Sed.html). Check out [UNIX for poets](https://web.stanford.edu/class/cs124/kwc-unix-for-poets.pdf) too.
 
 #### Creating a Document Term Matrix
+<hr/>
 
 A lot (but not all) statistical analyses of text are based on Document Term Matrices (DTM). A DTM, as the name says, is a matrix that contains one row per document (in our case a document is all the text for one candidate) and one column per term (or token). Like this:
 
@@ -546,6 +554,7 @@ Before that, some resources for term document matrix generation:
 The R packages I mentioned above help you generate term document matrices automatically. In python I can recommend the [gensim](https://radimrehurek.com/gensim/) package. It gives you utilities to make document term matrices and fit sophisticated models to your data. However you have to pre-process your the text yourself. Good that you just learned how to do that!
 
 #### The Sparsity Problem
+<hr/>
 
 As we suspected before, here is why we have such a sparse matrix. Words that mean the same thing are treated as completely independent dimensions. E.g.:
 
@@ -604,6 +613,7 @@ For this basic tutorial I will demonstrate just the basics (`1`-`7`) and complet
 Now lets do this. `1`, `2` and `3` can be easily done with regular expressions and standard string tools in every programming language.
 
 #### Dimension Reduction through Text Preprocessing
+<hr/>
 
 In this step we will convert everything to lower case and remove all non-letters. We will also remove so called stop words (words like `and`, `the`, `of` that don't contain much meaning but are very frequent). There are some special things in twitter data that we can also remove for now: 
 - Many links/urls
@@ -710,6 +720,7 @@ Ouput:
 This reduced the number of words by a lot. From over 7000 to 3300! But we can do better. We still didn't solve the problem of gramatical inflections, plurals, etc.
 
 #### Stemming and Lemmatization
+<hr/>
 
 Stemming and lemmatization are two techniques to 'normalize' tokens. This is done to avoid differentiating between different grammatical forms of the same word. Consider the three examples: 
     - (walk, walking) 
@@ -720,6 +731,7 @@ Stemming and lemmatization are two techniques to 'normalize' tokens. This is don
 The first is simple, the second is an irregular verb and the third is an animal. 
 
 ##### Stemming
+<hr/>
 
 Stemming algorithms are rule based and operate on the tokens itself. It returns the 'stem' of a word, i.e. without grammatical inflections etc. For the above example it would probably return something like:
     - (walk, walk)
@@ -729,6 +741,7 @@ Stemming algorithms are rule based and operate on the tokens itself. It returns 
 It worked fine in the first place, but stemmers are not able to find the cannonical form (or lemma) of a word. Therefore it failed to figure out the last three cases.
 
 ##### Lemmatization
+<hr/>
 
 Lemmatization, as the name suggests, is a group of algorithms that allow to find the lemma of a word. It often depends  on the context what the real lemma is (for example `the dove flies` or `I dove into the data`). The context of a word or the function of a word (verb, subject, object, etc.) can be automatically detected. This is called [part-of-speech tagging](https://en.wikipedia.org/wiki/Part-of-speech_tagging). Since it is important where in the sentence a word is located and what other words are around it, lemmatization works better if the algorithm is applied to the text in it's original form (not to text that has punctuation, upper case and stopwords removed for example). 
 For the examles above, lemmatization would produce results like this:
