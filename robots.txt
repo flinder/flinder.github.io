@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /local_alignment_visual/
-Disallow: /text_analysis_tutorial/
+Disallow: /resources/
