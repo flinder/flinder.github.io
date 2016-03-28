@@ -80,13 +80,13 @@
 
            <h3>Visualizing the Smith Waterman Local Alignment Algorithm</h3>
 <hr/>
-<p>27 Mar 2016</p>
+<p>28 Mar 2016</p>
 
-<script type="text/javascript" src="/resources/local_alignment_visual/d3/d3.min.js"></script>
+<script type="text/javascript" src="../../../resources/local_alignment_visual/d3/d3.min.js"></script>
 
-<script type="text/javascript" src="/resources/local_alignment_visual/local_alignment_algo.js"></script>
+<script type="text/javascript" src="../../../resources/local_alignment_visual/local_alignment_algo.js"></script>
 
-<script type="text/javascript" src="/resources/local_alignment_visual/local_alignment_visual.js"></script>
+<script type="text/javascript" src="../../../resources/local_alignment_visual/local_alignment_visual.js"></script>
 
 <p>This is an interactive <a href="https://d3js.org/">d3</a> visualization of the Smith-Waterman local
 alignment algorithm. If you never heard of it you can scroll down and read the
@@ -144,7 +144,9 @@ the matrix. Try it out!</p>
 <h4 id="the-algorithm">The Algorithm</h4>
 <hr />
 
-<p>The  algorithm was developed by <a href="http://dornsife.usc.edu/assets/sites/516/docs/papers/msw_papers/msw-014.pdf">Smith and Waterman</a> in 1981 to find matching molecular subsequences in proteins. Given two sequences, the algorithm calculates the optimal match between those sequences, called an alignment. It is called a <em>local</em> alignment algorithm because it can return just sub sections of the sequences as compared to global alignment where the complete sequences are aligned. Many sequences that we want to align (e.g. DNA sequences, text strings, etc.) do not match perfectly. Formatting, white space, typographical errors, etc. hinder the detection of otherwise homologous matches. The Smith-Waterman algorithm returns the optimal alignment while allowing for mismatches and gaps. The extent to which such imperfections are tolerated is governed by exogenous parameters that are set by the researcher. There are three such parameters, the match score, the mismatch score and the gap score. The goal of the algorithm is to return the alignment with the highest score given the input sequences and parameters.</p>
+<p>Me and my coauthors use it to detect similar legislation in US state legislation. Our project is related to <a href="http://dssg.uchicago.edu/lid/">this</a> tool. The Legislative Influence Detector, developed by Matt Burgess, Eugenia Giraudy, Julian Katz-Samuels and Joe Walsh last at <a href="dssg.uchicago.edu">Data Science for Social Good 2015</a> to detect influence of interest groups through model legislation.</p>
+
+<p>The algorithm was developed by <a href="http://dornsife.usc.edu/assets/sites/516/docs/papers/msw_papers/msw-014.pdf">Smith and Waterman</a> in 1981 to find matching molecular subsequences in proteins. Given two sequences, the algorithm calculates the optimal match between those sequences, called an alignment. It is called a <em>local</em> alignment algorithm because it can return just sub sections of the sequences as compared to global alignment where the complete sequences are aligned. Many sequences that we want to align (e.g. DNA sequences, text strings, etc.) do not match perfectly. Formatting, white space, typographical errors, etc. hinder the detection of otherwise homologous matches. The Smith-Waterman algorithm returns the optimal alignment while allowing for mismatches and gaps. The extent to which such imperfections are tolerated is governed by exogenous parameters that are set by the researcher. There are three such parameters, the match score, the mismatch score and the gap score. The goal of the algorithm is to return the alignment with the highest score given the input sequences and parameters.</p>
 
 <h5 id="intuition">Intuition</h5>
 
