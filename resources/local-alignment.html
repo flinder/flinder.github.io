@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Google Analytics Tracking 
+  __________________________________________________ -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-70377178-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+    
+  <!-- Highlight.js for code highlighting
+  __________________________________________________ -->
+  <link rel="stylesheet" href="/highlightjs/styles/zenburn.css">
+  <script src="/highlightjs/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+ 
+  <!-- Mathjax 
+  __________________________________________________ -->
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <div id="header" class="row"> 
+       <div class="container">
+        <div class="four columns">
+            <h3>Blog</h3>
+        </div>
+
+        <div id="nav" class="eight columns u-pull-right" align="right">
+             <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/cv/index.html">CV</a></li>
+                <li><a href="/research.html">Research</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+       </div>
+    </div>
+
+
+    <div class="container">
+
+
+           <h3>Visualizing the Smith Waterman Local Alignment Algorithm</h3>
+<hr/>
+<p>27 Mar 2016</p>
+
+<script type="text/javascript" src="/resources/local_alignment_visual/d3/d3.min.js"></script>
+
+<script type="text/javascript" src="/resources/local_alignment_visual/local_alignment_algo.js"></script>
+
+<script type="text/javascript" src="/resources/local_alignment_visual/local_alignment_visual.js"></script>
+
+<p>This is an interactive <a href="https://d3js.org/">d3</a> visualization of the Smith-Waterman local
+alignment algorithm. If you never heard of it you can scroll down and read the
+explanation of the algorithm.</p>
+
+<p>To use the visualization tool, enter the two sequences you want to align in the fields below. A <strong>Match Score</strong> is added to the alignment when two sequence
+elements match. The <strong>Mismatch Score</strong> is the penalty if the alignment contains
+two elements that don’t match, and the <strong>Gap Score</strong> is the penalty for each gap
+that is introduced to one of the sequences.</p>
+
+<p>You can use the defaults or fill in your own sequences and parameters in the fields below. Click on <strong>Generate Matrix</strong> to see the alignment matrix below. Sequence elements must be separated by white space. Each cell displays the score of the optimal alignment that ends with the corresponding combination of sequence elements. The lines allow you to back trace this alignment: <strong>if you click on one of the cells the corresponding alignment is
+displayed</strong> on the right side of the matrix, and its evolution is highlighted in
+the matrix. Try it out!</p>
+
+<div id="laFrame">
+    <form name="parameters" onsubmit="return handleFormSubmission()">
+        <table>
+            <tr>
+                <td>Sequence 1</td>
+                <td><input type="text" id="seq_1" value="a b c d e f g" /></td>
+                <td><input name="Submit" type="submit" value="Generate Matrix" /></td> 
+            </tr>
+            <tr>
+                <td>Sequence 2</td>
+                <td> <input type="text" id="seq_2" value="a b c x d e x g" /> </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Match Score</td>
+                <td><input type="text" id="match" value="3" /></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Mismatch Score</td>
+                <td><input type="text" id="misMatch" value="-2" /></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Gap Score</td>
+                <td><input type="text" id="gap" value="-1" /></td>
+                <td></td>
+            </tr> 
+        </table>
+    </form>
+    
+    <script type="text/javascript"> handleFormSubmission() </script>
+    <p></p> 
+</div>
+
+<p></p>
+<p></p>
+<p>If you are interested in the code you can find it on my <a href="https://github.com/flinder/local_alignment_visual">GitHub</a>.</p>
+<p></p>
+
+<h4 id="the-algorithm">The Algorithm</h4>
+<hr />
+
+<p>The  algorithm was developed by <a href="http://dornsife.usc.edu/assets/sites/516/docs/papers/msw_papers/msw-014.pdf">Smith and Waterman</a> in 1981 to find matching molecular subsequences in proteins. Given two sequences, the algorithm calculates the optimal match between those sequences, called an alignment. It is called a <em>local</em> alignment algorithm because it can return just sub sections of the sequences as compared to global alignment where the complete sequences are aligned. Many sequences that we want to align (e.g. DNA sequences, text strings, etc.) do not match perfectly. Formatting, white space, typographical errors, etc. hinder the detection of otherwise homologous matches. The Smith-Waterman algorithm returns the optimal alignment while allowing for mismatches and gaps. The extent to which such imperfections are tolerated is governed by exogenous parameters that are set by the researcher. There are three such parameters, the match score, the mismatch score and the gap score. The goal of the algorithm is to return the alignment with the highest score given the input sequences and parameters.</p>
+
+<h5 id="intuition">Intuition</h5>
+
+<p>Because there are <em>a lot</em> of possibilities for local alignments, we rely on a dynamic programming approach to calculate the optimal local alignment given the parameters. Dynamic programming means that results of previous calculations are stored and used in later calculations. This works in our case, because every alignment’s score is a function of the characters that are aligned before it. To make this a bit clearer consider the two example sequences from the visualization above:</p>
+
+<blockquote>
+<p class="entry"><b>s1:</b>  a b c d e f g</p>
+<p class="entry"><b>s2:</b>  a b c x d e x g</p>
+</blockquote>
+
+<p>Let’s consider the first four letters of the sequences above, ending in “d” in S1 and “x” in S2. If we want to find the best alignment, we have to start at the end of this subsequence. The best alignment ending in these elements is also the best alignment for the previous sub-sequences ending in “c” and “c”. This must be true, because if we had a sub-optimal alignment in the first three characters we could always improve the alignment of the first four characters by choosing a better one for the first three. For we know that the alignment</p>
+
+<blockquote>
+<p class="entry"><b>s1:</b>  a b - c d</p>
+<p class="entry"><b>s2:</b>  a b c - x</p>
+</blockquote>
+
+<p>is not optimal, because it is not optimal in the first three characters (the “-“
+indicate a gap, and we introduced two unnecessary gaps). Therefore, if we know
+that the optimal alignment of the first three elements is,</p>
+
+<blockquote>
+<p class="entry"><b>s1:</b>  a b c</p>
+<p class="entry"><b>s2:</b>  a b c</p>
+</blockquote>
+
+<p>we can exclude from consideration all alignments that do not start with this
+alignment. So when considering where to go from here, we just have to decide if
+we want to accept the mismatch “d”-“x”, introduce a gap in sequence 1 or
+sequence 2, or end the alignment here (keep these four steps in mind). This is a
+n easy decision since we have set parameters that increase or decrease our total
+alignment score depending on which step we chose (the match, mismatch and gap
+parameters).</p>
+
+<p>If the next two elements match, the decision is easy - we add them and increase
+the total alignment score. However, if they don’t match the decision is more
+difficult. We only want to introduce a gap or mismatch, if it pays off later
+(that is if we thereby can ‘reach’ another part of the sequence that matches
+again). We only know that, when we went through the whole sequence. The central
+idea is therefore to find all optimal alignments ending in all possible spots,
+keep these scores and after everything is calculated find the highest score.</p>
+
+<h5 id="formalization">Formalization</h5>
+
+<p>In order to systematically do this, we create a matrix (the matrix you see in the visualization above) where each combination of elements of the two sequences is assigned a cell. Denote the two sequences as <script type="math/tex">\mathcal{A} = (a_1, a_2, ... a_n)</script> and <script type="math/tex">\mathcal{B} = (b_1, b_2, ..., b_k)</script>. Now each cell with row and column indices <script type="math/tex">i</script> and <script type="math/tex">j</script> corresponds to an alignment that ends in <script type="math/tex">a_i</script> and <script type="math/tex">b_j</script>.</p>
+
+<p>The first step to finding the optimal alignment is filling the scoring matrix. Let <script type="math/tex">\delta</script>, <script type="math/tex">\epsilon</script> and <script type="math/tex">\gamma</script> be the match, mismatch and gap scores. Define the scoring function:</p>
+
+<p>\begin{equation}
+        \label{eqn:scoring}
+        S(a_i, b_j) = \delta^{\mathbb{I}(a_i = b_j)} + \epsilon^{\mathbb{I}(a_i \neq b_j)}
+\end{equation}</p>
+
+<p>Where <script type="math/tex">\mathbb{I}(.)</script> is the indicator function which returns <script type="math/tex">1</script> if the condition is true and <script type="math/tex">0</script> otherwise. In words, this function returns the match score if the elements match and the mismatch score otherwise.</p>
+
+<p>Then the entry for each cell <script type="math/tex">M_{i,j}</script>, <script type="math/tex">i=1,2,...,n</script> and <script type="math/tex">j=1,2,...,k</script> of the matrix is filled by the following recursive function:</p>
+
+<p>\begin{equation}
+        \label{eqn:fill}
+        M_{i,j} = \max(M_{i-1,j-1} + S(a_i, b_j), M_{i-1,j} + \gamma, M_{i,j-1} + \gamma, 0)
+\end{equation}</p>
+
+<p>The matrix is initialized empty with just a leading row of zeros and a leading column of zeros. In order to be able to insert gaps in the beginning of each sequence (or mathematically so <script type="math/tex">M_{i-1,j-1}</script> always exists). Now we start in the upper left corner of the matrix and begin filling the cells according to the second equation. The first entry in the <script type="math/tex">\max()</script> expression corresponds to a diagonal step, from <script type="math/tex">M_{i-1,j-1}</script> to <script type="math/tex">M_{i,j}</script>. If this step would be taken, elements <script type="math/tex">i</script> and <script type="math/tex">j</script> would be matched in the resulting alignment. If the two elements are equal the new score is the old one plus the match score if not the mismatch penalty is subtracted. The second and third entry correspond to an insertion of a gap in Sequence 1 or Sequence 2 respectively; or in the matrix moving one step to the right or one step down. Go back up to the matrix and check it out. You can see it by clicking on a cell, and then click on the adjacent cells above and on the left. If all scores are smaller or equal than zero, zero is filled into the cell. While filling the matrix with scores, we also keep track of the history of the alignment. That is, we store, which step was taken to fill a cell (from the left, the top, diagonally or no step when zero is filled in). In the visualization this is indicated by the lines pointing upwards, to the left or to the upper left corner of the cell.</p>
+
+<p>Once the matrix is filled, we scan it for the highest score. The optimal alignment is then found by following the lines until we hit a cell with a zero or the first element in one of the sequences. You can explore different alignments in the visualization by clicking on cells. The alignment will be displayed on the right and the relevant cells will be highlighted.</p>
+
+
+
+
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+var disqus_config = function () {
+this.page.url = page.url; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = page.post_title; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+//var disqus_developer = 1;
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//fridolinlindercom.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+    </div>
+
+     <div id="footer" class="row"> 
+
+         <div class="four columns">
+             Created with <a href="http://getskeleton.com/">Skeleton</a> and <a href="https://jekyllrb.com/">Jekyll</a>, hosted on <a href="https://pages.github.com/">Github Pages</a>. &copy 2015 Fridolin Linder.
+             
+        </div>
+
+        <div class="eight columns u-pull-right" align="right">
+             <ul>
+                <li><a href="mailto:fridolin.linder@gmail.com">fridolin.linder@gmail.com</a></li>
+                <li><a href="https://github.com/flinder">github.com/flinder</a></li>
+                <li><a href="https://twitter.com/FridolinLinder">@FridolinLinder</a></li>
+            </ul>
+        </div>
+
+      </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+</body>
+</html>
