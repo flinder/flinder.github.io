@@ -436,7 +436,7 @@ there.
  * –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #nav {
-    margin: 13px 0 50px 0;
+    margin: 13px 0 20px 0;
 }
 
 #nav ul li {
@@ -559,4 +559,10 @@ p.entry {
 
 table.cvTable {
     margin-bottom: 0;
+}
+
+
+/* ---------------------------  */
+input, select, textarea{
+        color: #999;
 }
