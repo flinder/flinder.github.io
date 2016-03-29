@@ -88,8 +88,9 @@
 
 <script type="text/javascript" src="../../../resources/local_alignment_visual/local_alignment_visual.js"></script>
 
-<p>This is an interactive <a href="https://d3js.org/">d3</a> visualization of the Smith-Waterman local
-alignment algorithm. If you never heard of it you can scroll down and read the
+<p>This is an interactive <a href="https://d3js.org/">d3</a> visualization of the <a href="http://dornsife.usc.edu/assets/sites/516/docs/papers/msw_papers/msw-014.pdf">Smith-Waterman</a> local
+alignment algorithm. This algorithm is used to align two sequences while
+allowing for minor imperfections (like gaps or mismatches) in the alignment. It can be used for a variety of things from matching molecular sequences (e.g. in DNA) to plagiarism detection.  If you never heard of it you can scroll down and read the
 explanation of the algorithm.</p>
 
 <p>To use the visualization tool, enter the two sequences you want to align in the fields below. A <strong>Match Score</strong> is added to the alignment when two sequence
@@ -144,29 +145,29 @@ the matrix. Try it out!</p>
 <h4 id="the-algorithm">The Algorithm</h4>
 <hr />
 
-<p>Me and my coauthors use it to detect similar legislation in US state legislation. Our project is related to <a href="http://dssg.uchicago.edu/lid/">this</a> tool. The Legislative Influence Detector, developed by Matt Burgess, Eugenia Giraudy, Julian Katz-Samuels and Joe Walsh last at <a href="dssg.uchicago.edu">Data Science for Social Good 2015</a> to detect influence of interest groups through model legislation.</p>
+<p>My coauthors and I use it to detect similar legislation in US state legislation. Our project is related to <a href="http://dssg.uchicago.edu/lid/">this</a> tool, the Legislative Influence Detector, developed by Matt Burgess, Eugenia Giraudy, Julian Katz-Samuels and Joe Walsh last at <a href="dssg.uchicago.edu">Data Science for Social Good 2015</a> to detect influence of interest groups through model legislation.</p>
 
-<p>The algorithm was developed by <a href="http://dornsife.usc.edu/assets/sites/516/docs/papers/msw_papers/msw-014.pdf">Smith and Waterman</a> in 1981 to find matching molecular subsequences in proteins. Given two sequences, the algorithm calculates the optimal match between those sequences, called an alignment. It is called a <em>local</em> alignment algorithm because it can return just sub sections of the sequences as compared to global alignment where the complete sequences are aligned. Many sequences that we want to align (e.g. DNA sequences, text strings, etc.) do not match perfectly. Formatting, white space, typographical errors, etc. hinder the detection of otherwise homologous matches. The Smith-Waterman algorithm returns the optimal alignment while allowing for mismatches and gaps. The extent to which such imperfections are tolerated is governed by exogenous parameters that are set by the researcher. There are three such parameters, the match score, the mismatch score and the gap score. The goal of the algorithm is to return the alignment with the highest score given the input sequences and parameters.</p>
+<p>The algorithm was developed by Smith and Waterman in 1981 to find matching molecular subsequences in proteins. Given two sequences the algorithm calculates the optimal match between those sequences, called an alignment. It is called a <em>local</em> alignment algorithm because it can return just subsections of the sequences as compared to global alignment where the complete sequences are aligned. Many sequences that we want to align (e.g. DNA sequences, text strings, etc.) do not match perfectly. Formatting, white space, typographical errors, etc. hinder the detection of otherwise homologous matches. The Smith-Waterman algorithm returns the optimal alignment while allowing for mismatches and gaps. The extent to which such imperfections are tolerated is governed by external (tuning-) parameters that are set by the researcher. There are three such parameters, the match score, the mismatch score and the gap score. The goal of the algorithm is to return the alignment with the highest score given the input sequences and parameters.</p>
 
 <h5 id="intuition">Intuition</h5>
 
-<p>Because there are <em>a lot</em> of possibilities for local alignments, we rely on a dynamic programming approach to calculate the optimal local alignment given the parameters. Dynamic programming means that results of previous calculations are stored and used in later calculations. This works in our case, because every alignment’s score is a function of the characters that are aligned before it. To make this a bit clearer consider the two example sequences from the visualization above:</p>
+<p>Because there are <em>a lot</em> of possibilities for local alignments, we rely on a <a href="https://www.codechef.com/wiki/tutorial-dynamic-programming">dynamic programming</a> approach to calculate the optimal local alignment given the parameters. Dynamic programming means that results of previous calculations are stored and used in later calculations. This works in our case because every alignment’s score is a function of the characters that are aligned before it. To make this a bit clearer consider the two example sequences from the visualization above:</p>
 
 <blockquote>
 <p class="entry"><b>s1:</b>  a b c d e f g</p>
 <p class="entry"><b>s2:</b>  a b c x d e x g</p>
 </blockquote>
 
-<p>Let’s consider the first four letters of the sequences above, ending in “d” in S1 and “x” in S2. If we want to find the best alignment, we have to start at the end of this subsequence. The best alignment ending in these elements is also the best alignment for the previous sub-sequences ending in “c” and “c”. This must be true, because if we had a sub-optimal alignment in the first three characters we could always improve the alignment of the first four characters by choosing a better one for the first three. For we know that the alignment</p>
+<p>Let’s consider the first four letters of the sequences above, ending in “d” in S1 and “x” in S2. If we want to find the best alignment we have to start at the end of this subsequence. The best alignment ending in these elements is also the best alignment for the previous sub-sequences ending in “c” and “c”. This must be true because if we had a sub-optimal alignment in the first three characters we could always improve the alignment of the first four characters by choosing a better one for the first three. We know that the alignment</p>
 
 <blockquote>
 <p class="entry"><b>s1:</b>  a b - c d</p>
 <p class="entry"><b>s2:</b>  a b c - x</p>
 </blockquote>
 
-<p>is not optimal, because it is not optimal in the first three characters (the “-“
-indicate a gap, and we introduced two unnecessary gaps). Therefore, if we know
-that the optimal alignment of the first three elements is,</p>
+<p>is not optimal because it is not optimal in the first three characters (the “-“
+indicate a gap and we introduced two unnecessary gaps). Therefore, if we know
+that the optimal alignment of the first three elements is:</p>
 
 <blockquote>
 <p class="entry"><b>s1:</b>  a b c</p>
@@ -174,10 +175,9 @@ that the optimal alignment of the first three elements is,</p>
 </blockquote>
 
 <p>we can exclude from consideration all alignments that do not start with this
-alignment. So when considering where to go from here, we just have to decide if
+alignment. So when considering where to go from here we just have to decide if
 we want to accept the mismatch “d”-“x”, introduce a gap in sequence 1 or
-sequence 2, or end the alignment here (keep these four steps in mind). This is a
-n easy decision since we have set parameters that increase or decrease our total
+sequence 2, or end the alignment here (keep these four steps in mind). This is an easy decision since we have set parameters that increase or decrease our total
 alignment score depending on which step we chose (the match, mismatch and gap
 parameters).</p>
 
@@ -185,9 +185,10 @@ parameters).</p>
 the total alignment score. However, if they don’t match the decision is more
 difficult. We only want to introduce a gap or mismatch, if it pays off later
 (that is if we thereby can ‘reach’ another part of the sequence that matches
-again). We only know that, when we went through the whole sequence. The central
+again). We only know that once we went through the whole sequence. The central
 idea is therefore to find all optimal alignments ending in all possible spots,
-keep these scores and after everything is calculated find the highest score.</p>
+keep these scores and after everything is calculated finding the alignment that
+with the highest overall score.</p>
 
 <h5 id="formalization">Formalization</h5>
 
@@ -209,9 +210,15 @@ keep these scores and after everything is calculated find the highest score.</p>
         M_{i,j} = \max(M_{i-1,j-1} + S(a_i, b_j), M_{i-1,j} + \gamma, M_{i,j-1} + \gamma, 0)
 \end{equation}</p>
 
-<p>The matrix is initialized empty with just a leading row of zeros and a leading column of zeros. In order to be able to insert gaps in the beginning of each sequence (or mathematically so <script type="math/tex">M_{i-1,j-1}</script> always exists). Now we start in the upper left corner of the matrix and begin filling the cells according to the second equation. The first entry in the <script type="math/tex">\max()</script> expression corresponds to a diagonal step, from <script type="math/tex">M_{i-1,j-1}</script> to <script type="math/tex">M_{i,j}</script>. If this step would be taken, elements <script type="math/tex">i</script> and <script type="math/tex">j</script> would be matched in the resulting alignment. If the two elements are equal the new score is the old one plus the match score if not the mismatch penalty is subtracted. The second and third entry correspond to an insertion of a gap in Sequence 1 or Sequence 2 respectively; or in the matrix moving one step to the right or one step down. Go back up to the matrix and check it out. You can see it by clicking on a cell, and then click on the adjacent cells above and on the left. If all scores are smaller or equal than zero, zero is filled into the cell. While filling the matrix with scores, we also keep track of the history of the alignment. That is, we store, which step was taken to fill a cell (from the left, the top, diagonally or no step when zero is filled in). In the visualization this is indicated by the lines pointing upwards, to the left or to the upper left corner of the cell.</p>
+<p>The matrix is initialized empty with just a leading row of zeros and a leading column of zeros. In order to be able to insert gaps in the beginning of each sequence (or mathematically so <script type="math/tex">M_{i-1,j-1}</script> always exists). Now we start in the upper left corner of the matrix and begin filling the cells according to the second equation. The first entry in the <script type="math/tex">\max()</script> expression corresponds to a diagonal step, from <script type="math/tex">M_{i-1,j-1}</script> to <script type="math/tex">M_{i,j}</script>. If this step would be taken, elements <script type="math/tex">i</script> and <script type="math/tex">j</script> would be matched in the resulting alignment. If the two elements are equal the new score is the old one plus the match score if not the mismatch penalty is subtracted. The second and third entry correspond to an insertion of a gap in <script type="math/tex">\mathcal{A}</script> or <script type="math/tex">\mathcal{B}</script> respectively; or in the matrix moving one step to the right or one step down. Go back up to the matrix and check it out. You can see it by clicking on a cell, and then click on the adjacent cells above and on the left. If all scores are smaller or equal than zero, zero is filled into the cell. While filling the matrix with scores we also keep track of the history of the alignment. That is, we store which step was taken to fill a cell (from the left, the top, diagonally, or no step when zero is filled in). In the visualization this is indicated by the lines pointing upwards, to the left or to the upper left corner of the cell.</p>
 
-<p>Once the matrix is filled, we scan it for the highest score. The optimal alignment is then found by following the lines until we hit a cell with a zero or the first element in one of the sequences. You can explore different alignments in the visualization by clicking on cells. The alignment will be displayed on the right and the relevant cells will be highlighted.</p>
+<p>Once the matrix is filled we scan it for the highest score. The optimal alignment is then found by following the lines until we hit a cell with a zero or the first element in one of the sequences. You can explore different alignments in the visualization by clicking on cells. The alignment will be displayed on the right and the relevant cells will be highlighted.</p>
+
+<p>This algorithm is computationally expensive, it needs O(nk) time and space,
+which can be a lot if we want to consider longer sequences. However, it is
+guaranteed to find the optimal alignment given the scoring parameters. This
+follows from the fact that each alignment is optimal in its predecessors (see
+the intuition section).</p>
 
 
 
