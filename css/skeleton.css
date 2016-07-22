@@ -510,7 +510,7 @@ there.
 
 .research.post a {
     text-decoration: none;
-    color: #999;
+    color: #222;
 }
 
 .research.post a:hover {
@@ -525,7 +525,6 @@ there.
 .research.row {
     margin-bottom: 5rem;
 }
-
 
 /*---------------------------- Style for blog stuff */
 
