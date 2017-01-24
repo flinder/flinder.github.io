@@ -77,6 +77,18 @@ Fabrizio Gilardi, University of Zürich (2016).
 *Protest Event Data for Austria*, [Prof. Wolfgang C. Müller](https://scholar.google.com/citations?user=9MttMt8AAAAJ&hl=en), University of Vienna (2011).
 
 
+Technical Skills
+---------------
+
+Research: Design and analysis of quantitative observational and experimental studies.
+
+Programming:  Python, R (proficient), C++, Javascript (familiar)
+
+Data Management: SQL, MongoDB
+
+Languages: German, English, Spanish 
+
+
 Conference Presentations
 --------------------
 
