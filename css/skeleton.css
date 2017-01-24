@@ -169,13 +169,12 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
     text-decoration: none;
-    color: #999; 
+    color: #0FA0CE; 
 }
 a:hover {
-  color: #0FA0CE; 
+  color: #999; 
   text-decoration: underline;
 }
-
 
 
 /* Buttons
@@ -457,6 +456,8 @@ there.
     height: auto;
 }
 
+/* Footer styles */
+
 #footer ul li {
     display: inline;
     margin: 0 2rem 0 0;
@@ -474,12 +475,23 @@ there.
     font-size: 1rem;
 }
 
+/* Header styles */
+
 #header {
     margin-bottom: 20px;
     border-style: solid;
     border-color: #999;
     background-color: #F2F2F2;
     border-width: 0px 0px 1px 0px;
+}
+
+#header a {
+    color: #999;
+}
+
+#header a:hover {
+    color: #0FA0CE;
+    text-decoration: underline;
 }
 
 .bottom-space {
@@ -506,16 +518,6 @@ there.
 
 .research.post h6 {
     margin-bottom: 3rem;
-}
-
-.research.post a {
-    text-decoration: none;
-    color: #222;
-}
-
-.research.post a:hover {
-    text-decoration: underline;
-    color: #0FA0CE; 
 }
 
 .research.post p {
