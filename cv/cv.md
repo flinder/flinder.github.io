@@ -122,7 +122,7 @@ Performance Based Scholarship, University of Vienna (2010).
 Service and Teaching
 -------------------
 
-Reviewer: American Sociological Review.
+Reviewer: American Sociological Review, Legislative Studies Quarterly
 
 Workshops: Introduction to UNIX Command Line and PSU High Performance Computing (BDSS IGERT 2015), Introduction to Python (BDSS IGERT 2014)
 
