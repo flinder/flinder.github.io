@@ -43,7 +43,7 @@ Software
 infer latent diffusion networks (Creator).
 
 [edarf](https://github.com/zmjones/edarf): R package for exploratory data
-analysis with Random Forest (Contributor).
+analysis with random forest (Contributor).
 
 
 Professional Experience
@@ -63,7 +63,7 @@ Research Assistance
 ----------
 
 *Policy Diffusion of Smoking Ban Legislation in US and Switzerland*, Prof.
-Fabrizio Gilardi, University of Zürich (2016).
+[Fabrizio Gilardi](http://www.fabriziogilardi.org/), University of Zürich (2016).
 
 *Text as Policy: Measuring Policy Similarity through Bill Text Reuse*, 
 [Prof. Bruce Desmarais](http://sites.psu.edu/desmaraisgroup/) (2015-2016).
