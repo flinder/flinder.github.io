@@ -68,7 +68,7 @@ Research Assistance
 *Text as Policy: Measuring Policy Similarity through Bill Text Reuse*, 
 [Prof. Bruce Desmarais](http://sites.psu.edu/desmaraisgroup/) (2015-2016).
 
-*Bayesian Measurement Models for Large Scale Data*, [Prof. Eric Loken](http://hhd.psu.edu/hdfs/directory/bio.aspx?id=149)[Zita Oravecsz](http://www.cogsci.uci.edu/~zoravecz/bayes/index.php?site=BOUM) (BDSS IGERT Research Rotation, Department for Human Developmentand Family Studies, Penn State) (2014-2015).
+*Bayesian Measurement Models for Large Scale Data*, [Prof. Eric Loken](http://hhd.psu.edu/hdfs/directory/bio.aspx?id=149) and [Zita Oravecsz](http://www.cogsci.uci.edu/~zoravecz/bayes/index.php?site=BOUM) (BDSS IGERT Research Rotation, Department for Human Developmentand Family Studies, Penn State) (2014-2015).
 
 *Legislative Speech Project*, [Prof. Burt Monroe](http://polisci.la.psu.edu/people/blm24) (2013-2014).
 
