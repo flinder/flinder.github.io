@@ -104,7 +104,7 @@ Polmeth 2014: Data Mining as Exploratory Data Analysis (Poster).
 Awards, Honors and Fellowships
 -----------------------------
 
-Peter Schallmoser Award, Pennsylvania State University.
+Peter Schallmoser Award, Pennsylvania State University (2017).
 
 Eric and Wendy Schmidt Foundation, [Data Science for Social Good](http://dssg.io) 
 Fellowship (2015).
