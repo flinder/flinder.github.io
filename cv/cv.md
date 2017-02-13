@@ -27,11 +27,13 @@ Publications
 ----------
 Exploratory Data Analysis using Random Forests (R Package). (2016). Journal of
 Open Source Software. (With [Zachary M. Jones](http://zmjones.com)).
+[Link](http://joss.theoj.org/papers/d29df349c8450ef958c0fde5bf164371).
 
 Human Rights Texts: Converting Human Rights Primary Source Documents into
 Data.(2015). PLOS ONE 10 (9). (With [Christopher J. Fariss](http://cfariss.com/),
 [Charles Crabtree](http://charlescrabtree.com), [Zachary M. Jones](http://zmjones.com),
 Megan Bied, Taranamoll Kaur, Ana Ross and Michael Tsai).
+[Link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0138935)
 
 Psychometric Analysis of Residence and MOOC Assessment. (2015). Paper Presented
 at the 2015 ASEE Annyal Conference and Exposition, Seattle Washington. (With Eric
