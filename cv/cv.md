@@ -17,10 +17,10 @@ Education
 :   **PhD, Political Science, Social Data Analytics**; Pennsylvania State University.
 
 2011-2013
-:   **MA, Policial Science**; University of Mannheim (Germany).
+:   **MA, Political Science**; University of Mannheim (Germany).
 
 2008-2011
-:   **BA, Policial Science**; University of Vienna (Austria).
+:   **BA, Political Science**; University of Vienna (Austria).
 
 
 Publications
