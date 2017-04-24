@@ -8,7 +8,7 @@ excerpt: "A tutorial for the basics of computational text analysis. For absolute
 comments: "true"
 ---
 
-#### About?
+#### About
 <hr/>
 This is a little tutorial I gave for my visualization class in the Geography Department at Penn State. I introduce the very basic steps that are necessary to get messy text collected online or in other places into a form to be usable for more sophisticated text analysis tools. There are a lot of great resources out there that explain all kinds of cool things that you can do with text, but there are a lot of nitty gritty details to consider before you can get started. As an example I use some twitter data I collected with the search term `Trump`.  
 
