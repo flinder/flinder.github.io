@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog"
+title: "New R Package: NetworkInference"
 post_title: "New R Package: NetworkInference"
 date: 2017-03-27
 image_source: /images/network_inference_cascade.png

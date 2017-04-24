@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Blog"
-post_title: "Basics of Computational Text Analysis"
+title: "Basics of Computational Text Analysis in Python"
+post_title: "Basics of Computational Text Analysis in Python"
 date: 2016-03-24
 image_source: /images/text_intro_logo.png
 excerpt: "A tutorial for the basics of computational text analysis. For absolute beginners: how do I get from natural language to a term document matrix?"

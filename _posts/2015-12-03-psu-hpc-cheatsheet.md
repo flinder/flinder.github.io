@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog"
+title: "PSU ACI Cheatsheet"
 post_title: "PSU ACI Cheatsheet"
 date: 2015-12-03
 image_source: /images/aci_logo.png
