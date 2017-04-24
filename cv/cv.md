@@ -18,7 +18,6 @@ Education
 
 2011-2013
 :   **MA, Political Science**; University of Mannheim (Germany).
-
 2008-2011
 :   **BA, Political Science**; University of Vienna (Austria).
 
@@ -124,12 +123,9 @@ Performance Based Scholarship, University of Vienna (2010).
 Service and Teaching
 -------------------
 
-President of the Graduate Association in Political Science at Penn State.
+President of the Graduate Association in Political Science at Penn State (2016-2017).
 
-Reviewer: American Sociological Review, Legislative Studies Quarterly.
+*Reviewer:* American Political Science Review, American Sociological Review, Legislative Studies Quarterly.
 
-Workshops: Introduction to UNIX Command Line and PSU High Performance Computing (BDSS IGERT 2015), Introduction to Python (BDSS IGERT 2014).
-
-
-
+*Workshops:* Basics of Computational Text Analysis with Python (GEOG 596 2016, Materials: [1](http://fridolin-linder.com/2016/03/24/intro-to-text-analysis.html), [2](https://github.com/flinder/text_analysis_tutorial)), Introduction to UNIX Command Line and PSU High Performance Computing (BDSS IGERT 2015, Materials: [1](http://fridolin-linder.com/2015/12/03/psu-hpc-cheatsheet.html), [2](http://fridolin-linder.com/2015/12/02/commandline-cheatsheet.html)), Introduction to Python (BDSS IGERT 2014).
 </div>
