@@ -93,13 +93,13 @@ Languages: German, English, Spanish
 Conference Presentations
 --------------------
 
-APSA Annual Meeting (2016): Text as Policy: Measuring Policy Similarity through Bill Text Reuse.
+New Faces in Political Methodology (2017)
 
-Polmeth 2016: Text as Policy: Measuring Policy Similarity through Bill Text Reuse (Poster).
+Polmeth (2014, 2016)
 
-MPSA Annual Meeting (2015): Bias in Ideological Self and Party Placement. The Consistency Effect.
+APSA Annual Meeting (2016)
 
-Polmeth 2014: Data Mining as Exploratory Data Analysis (Poster).
+MPSA Annual Meeting (2015)
 
 
 Awards, Honors and Fellowships
