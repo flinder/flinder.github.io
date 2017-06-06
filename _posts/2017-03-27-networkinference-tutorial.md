@@ -157,12 +157,12 @@ adopted). Let's look at the upper left corner of this matrix:
 
 Most functionality of the `NetworkInference` package is based on the
 `cascades` data format. So before starting with the analysis we have to
-transform our dataframe to such an object (other formats for the input
+transform our data to such an object (other formats for the input
 data, such as three column data frames with a cascade id column ('long format'), 
-are supported, too. See `?as.cascade` for more info if you data looks
+are supported, too. See `?as_cascade_long` for more info if you data looks
 differently.).
 
-    policy_cascades <- as.cascade(policies, node_names = state_names)
+    policy_cascades <- as_cascade_wide(policies, node_names = state_names)
 
 The `cascades` data type is basically a list containing all the data
 stored in three separate objects.
