@@ -13,14 +13,11 @@ Fridolin Linder
 Education
 ---------
 
-2013-2018
-:   **PhD, Political Science, Social Data Analytics**; Pennsylvania State University.
+2013-(expected 2018):   **PhD, Political Science, Social Data Analytics**; Pennsylvania State University.
 
-2011-2013
-:   **MA, Political Science**; University of Mannheim (Germany).
+2011-2013:   **MA, Political Science**; University of Mannheim (Germany) (1 year of course work at Washington University in St. Louis).
 
-2008-2011
-:   **BA, Political Science**; University of Vienna (Austria).
+2008-2011:   **BA, Political Science**; University of Vienna (Austria).
 
 
 Publications
