@@ -1,3 +1,6 @@
 name: Fridolin Linder
+url: http://fridolin-linder.com
 markdown: kramdown
 encoding: utf-8
+gems:
+      - jekyll-feed

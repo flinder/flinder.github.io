@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog"
+title: "Presentation on Word2Vec Embeddings"
 post_title: "Presentation on Word2Vec Embeddings"
 date: 2016-11-07
 image_source: /images/embeddings_title_image.png

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Blog"
-post_title: "Basics of Computational Text Analysis - The Boring Part"
+title: "Basics of Computational Text Analysis in Python"
+post_title: "Basics of Computational Text Analysis in Python"
 date: 2016-03-24
 image_source: /images/text_intro_logo.png
 excerpt: "A tutorial for the basics of computational text analysis. For absolute beginners: how do I get from natural language to a term document matrix?"
 comments: "true"
 ---
 
-#### What, Why, for Who?
+#### About
 <hr/>
 This is a little tutorial I gave for my visualization class in the Geography Department at Penn State. I introduce the very basic steps that are necessary to get messy text collected online or in other places into a form to be usable for more sophisticated text analysis tools. There are a lot of great resources out there that explain all kinds of cool things that you can do with text, but there are a lot of nitty gritty details to consider before you can get started. As an example I use some twitter data I collected with the search term `Trump`.  
 
@@ -16,7 +16,7 @@ There are a few tutorials for the basics of text analysis, but they mostly are f
 
 This tutorial is aimed at beginners in text analysis with little experience with computational tools. I provide actual example code that demonstrates how every idea would be realized. Everything is written in basic python. For those who are not familiar with programming I try to explain every step so you don't have to know python in order to follow. 
 
-You can find the whole tutorial as an ipython notebook and all the materials on my [github](https://github.com/flinder/flinder.github.io/tree/master/text_analysis_tutorial).
+You can find the whole tutorial as an ipython notebook and all the materials on my [github](https://github.com/flinder/text_analysis_tutorial).
 
 #### Roadmap
 <hr/>

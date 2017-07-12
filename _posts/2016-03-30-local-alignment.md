@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog"
+title: "Visualizing the Smith Waterman Local Alignment Algorithm"
 post_title: "Visualizing the Smith Waterman Local Alignment Algorithm"
 date: 2016-03-30
 image_source: /resources/local_alignment_visual/example.png

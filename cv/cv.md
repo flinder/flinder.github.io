@@ -6,7 +6,7 @@ Fridolin Linder
 
 > The Pennsylvania State University, Department of Political Science, 230 Pond Laboratory
 
-> [fridolin.linder@psu.edu](mailto:fridolin.linder@psu.edu) - [fridolin-linder.com](http://fridolin-linder.com) - [github/flinder](https://github.com/flinder)
+> [fridolin.linder@gmail.com](mailto:fridolin.linder@gmail.com) - [fridolin-linder.com](http://fridolin-linder.com) - [github/flinder](https://github.com/flinder)
 
 ----
 
@@ -38,11 +38,19 @@ Loken, Zita Oravecz and Conrad Tucker).
 
 Software
 ----------
-[NetworkInference](https://github.com/flinder/NetworkInference): R package to
-infer latent diffusion networks (Creator).
+[ActiveStream](https://github.com/flinder/active_stream): Machine learning (active learning) and query expansion for the Twitter Streaming API for improved data collection.
 
-[edarf](https://github.com/zmjones/edarf): R package for exploratory data
-analysis with random forest (Contributor).
+[NetworkInference](https://github.com/flinder/NetworkInference): R package to infer latent diffusion networks.
+
+[edarf](https://github.com/zmjones/edarf): R package for exploratory data analysis with random forest (Contributor).
+
+
+Selected Working Papers
+----------
+
+Privacy Protection for Natural Language Records: Neural Generative Models for Releasing Synthetic Twitter Data. (With [Joshua Snoke](http://stat.psu.edu/people/jvs140@psu.edu) and [Alexander Ororbia](http://www.personal.psu.edu/ago109/)) [Link](https://arxiv.org/abs/1606.01151)
+
+Text as Policy: Measuring Policy Similarity Through Bill Text Reuse. (With [Bruce Desmarais](http://brucedesmarais.com/), [Matthew Burgess](https://scholar.google.com/citations?user=BJFgS_oAAAAJ&hl=en) and [Eugenia Giraudy](https://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=e://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=en)) [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2812607)
 
 
 Professional Experience
@@ -56,6 +64,18 @@ Bundestag (German Parliament), Internship/Assistant for [Silvia Schmidt, Member 
 UNICEF, Cochabamba (Bolivia), Internship (2007).
 
 Centro Cultural Ayopayamanta (Bolivia), Internship (2006 - 2007).
+
+
+Technical Skills
+---------------
+
+Research: Design and analysis of quantitative observational and experimental studies.
+
+Programming:  Python, R (proficient), C++, Javascript (familiar)
+
+Data Management: SQL, MongoDB
+
+Languages: German, English, Spanish 
 
 
 Research Assistance
@@ -76,28 +96,18 @@ Research Assistance
 *Protest Event Data for Austria*, [Prof. Wolfgang C. Müller](https://scholar.google.com/citations?user=9MttMt8AAAAJ&hl=en), University of Vienna (2011).
 
 
-Technical Skills
----------------
-
-Research: Design and analysis of quantitative observational and experimental studies.
-
-Programming:  Python, R (proficient), C++, Javascript (familiar)
-
-Data Management: SQL, MongoDB
-
-Languages: German, English, Spanish 
-
-
 Conference Presentations
 --------------------
 
-APSA Annual Meeting (2016): Text as Policy: Measuring Policy Similarity through Bill Text Reuse.
+State Politics and Policy (2017)
 
-Polmeth 2016: Text as Policy: Measuring Policy Similarity through Bill Text Reuse (Poster).
+New Faces in Political Methodology (2017)
 
-MPSA Annual Meeting (2015): Bias in Ideological Self and Party Placement. The Consistency Effect.
+Society for Political Methodology Meeting (2014, 2016, 2017)
 
-Polmeth 2014: Data Mining as Exploratory Data Analysis (Poster).
+American Political Science Association Annual Meeting (2016)
+
+Midwest Political Science Association Annual Meeting (2015)
 
 
 Awards, Honors and Fellowships
@@ -121,12 +131,9 @@ Performance Based Scholarship, University of Vienna (2010).
 Service and Teaching
 -------------------
 
-President of the Graduate Association in Political Science at Penn State.
+President of the Graduate Association in Political Science at Penn State (2016-2017).
 
-Reviewer: American Sociological Review, Legislative Studies Quarterly.
+*Reviewer:* American Political Science Review, American Sociological Review, Legislative Studies Quarterly.
 
-Workshops: Introduction to UNIX Command Line and PSU High Performance Computing (BDSS IGERT 2015), Introduction to Python (BDSS IGERT 2014).
-
-
-
+*Workshops:* Basics of Computational Text Analysis with Python (GEOG 596 2016, Materials: [1](http://fridolin-linder.com/2016/03/24/intro-to-text-analysis.html), [2](https://github.com/flinder/text_analysis_tutorial)), Introduction to UNIX Command Line and PSU High Performance Computing (BDSS IGERT 2015, Materials: [1](http://fridolin-linder.com/2015/12/03/psu-hpc-cheatsheet.html), [2](http://fridolin-linder.com/2015/12/02/commandline-cheatsheet.html)), Introduction to Python (BDSS IGERT 2014).
 </div>

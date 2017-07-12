@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog"
+title: "UNIX Commandline Cheatsheet"
 post_title: "UNIX Commandline Cheatsheet"
 date: 2015-12-02
 image_source: /images/cline.png
