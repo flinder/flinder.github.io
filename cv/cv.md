@@ -35,6 +35,7 @@ Megan Bied, Taranamoll Kaur, Ana Ross and Michael Tsai).
 Psychometric Analysis of Residence and MOOC Assessment. (2015). Paper Presented
 at the 2015 ASEE Annyal Conference and Exposition, Seattle Washington. (With Eric
 Loken, Zita Oravecz and Conrad Tucker).
+[Link](https://peer.asee.org/psychometric-analysis-of-residence-and-mooc-assessments)
 
 Software
 ----------
