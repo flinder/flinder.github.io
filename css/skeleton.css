@@ -649,3 +649,8 @@ table {
     width: 100%;
 }
 
+/* indentation for lists */
+ul {
+  padding-left: 40px;
+  list-style-position: outside;
+}
