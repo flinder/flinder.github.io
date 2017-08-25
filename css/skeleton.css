@@ -498,10 +498,7 @@ there.
     margin-bottom: 10rem
 }
 
-
-
-
-/*0--------------------- Stuff for research page */
+/*--------------------- Stuff for research page */
 
 .research.post {
     border-style: solid;
@@ -517,7 +514,7 @@ there.
 }
 
 .research.post h6 {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .research.post p {
@@ -525,10 +522,9 @@ there.
 }
 
 .research.row {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
-/*---------------------------- Style for blog stuff */
 
 .blogListElement {
     border-style: dotted;
