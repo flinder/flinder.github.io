@@ -7,6 +7,7 @@ image_source: /images/network_inference_cascade.png
 excerpt: "The package provides an R implementation of the netinf algorithm (Gomez Rodriguez,
 Leskovec, and Krause, 2010). Given a set of events that spread between a set of nodes the algorithm infers the most likely stable diffusion network that is underlying the diffusion process."
 comments: "true"
+category: "software"
 ---
 
 Introduction

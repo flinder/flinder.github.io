@@ -1,0 +1,32 @@
+---
+layout: default
+title: Software
+---
+
+{% for post in site.posts %}
+    {% if post.category == "resources" %}
+        <div class="twelve columns blogListElement">
+
+            <div class="row"> 
+
+                <div class="eight columns">
+
+                    {{ post.date | date_to_string }}
+                    <a href="{{ post.url }}" title="{{ post.post_title }}">
+                        <h5>{{ post.post_title }}</h5>
+                    </a>
+                    {{ post.excerpt }}
+
+                </div>
+
+                <div class="four columns" align="left">
+                    <a href="{{ post.url }}">
+                        <img class="blogListImage" src="{{ post.image_source }}" align="center">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    {% endif %} 
+{% endfor %}

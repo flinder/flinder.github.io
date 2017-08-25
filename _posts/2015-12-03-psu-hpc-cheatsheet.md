@@ -6,6 +6,7 @@ date: 2015-12-03
 image_source: /images/aci_logo.png
 excerpt: "Materials for the second part of the workshop <em>Intro to Penn State high performance computing and UNIX command line</em>. Everything you need to run basic programs on Penn States Advanced Cyber Infrastructure (ACI)"
 comments: "true"
+category: "resources"
 ---
 
 

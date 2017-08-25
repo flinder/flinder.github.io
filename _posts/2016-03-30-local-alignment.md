@@ -6,11 +6,12 @@ date: 2016-03-30
 image_source: /resources/local_alignment_visual/example.png
 excerpt: "A d3 visualization of the Smith Waterman Local Alignment Algorithm"
 comments: "true"
+category: "resources"
 ---
 
-<script type="text/javascript" src="../../../resources/local_alignment_visual/d3/d3.min.js"></script>
-<script type="text/javascript" src="../../../resources/local_alignment_visual/local_alignment_algo.js"></script>
-<script type="text/javascript" src="../../../resources/local_alignment_visual/local_alignment_visual.js"></script>
+<script type="text/javascript" src="../../../../resources/local_alignment_visual/d3/d3.min.js"></script>
+<script type="text/javascript" src="../../../../resources/local_alignment_visual/local_alignment_algo.js"></script>
+<script type="text/javascript" src="../../../../resources/local_alignment_visual/local_alignment_visual.js"></script>
 
 
 This is an interactive [d3](https://d3js.org/) visualization of the [Smith-Waterman](http://www.sciencedirect.com/science/article/pii/0022283681900875) local
