@@ -20,9 +20,9 @@ Education
 2008-2011:   **BA, Political Science**; University of Vienna (Austria).
 
 
-Publications
+Peer Reviewed Publications
 ----------
-Exploratory Data Analysis using Random Forests (R Package). (2016). Journal of
+Exploratory Data Analysis using Random Forests. (2016). Journal of
 Open Source Software. (With [Zachary M. Jones](http://zmjones.com)).
 [Link](http://joss.theoj.org/papers/d29df349c8450ef958c0fde5bf164371).
 
@@ -57,6 +57,9 @@ Text as Policy: Measuring Policy Similarity Through Bill Text Reuse. (With [Bruc
 Professional Experience
 ----------
 
+Visiting Graduate Researcher, University of Zürich (Summer 2016): *Policy Diffusion of Smoking Ban Legislation in US and Switzerland*, Prof.
+[Fabrizio Gilardi](http://www.fabriziogilardi.org/).
+
 Eric and Wendy Schmidt Foundation, [Data Science for Social Good](http://dssg.io) 
 Fellowship (2015).
 
@@ -81,9 +84,6 @@ Languages: German, English, Spanish
 
 Research Assistance
 ----------
-
-*Policy Diffusion of Smoking Ban Legislation in US and Switzerland*, Prof.
-[Fabrizio Gilardi](http://www.fabriziogilardi.org/), University of Zürich (2016).
 
 *Text as Policy: Measuring Policy Similarity through Bill Text Reuse*, 
 [Prof. Bruce Desmarais](http://sites.psu.edu/desmaraisgroup/) (2015-2016).
@@ -129,12 +129,55 @@ Fellowship, <a href="http://www.bw-stipendium.de/en/home.html">Baden-Württember
 
 Performance Based Scholarship, University of Vienna (2010).
 
-Service and Teaching
+Teaching
+-------------------
+
+*Workshops:*
+
+Introduction to Computational Text Analysis with Python (GEOG 596 Penn State 2016, Materials: [1](http://fridolin-linder.com/2016/03/24/intro-to-text-analysis.html), [2](https://github.com/flinder/text_analysis_tutorial))
+
+Introduction to UNIX Command Line and PSU High Performance Computing (BDSS IGERT 2015, Materials: [1](http://fridolin-linder.com/2015/12/03/psu-hpc-cheatsheet.html), [2](http://fridolin-linder.com/2015/12/02/commandline-cheatsheet.html))
+
+Introduction to Python (BDSS IGERT 2014).
+
+
+Service
 -------------------
 
 President of the Graduate Association in Political Science at Penn State (2016-2017).
 
 *Reviewer:* American Political Science Review, American Sociological Review, Legislative Studies Quarterly.
 
-*Workshops:* Basics of Computational Text Analysis with Python (GEOG 596 2016, Materials: [1](http://fridolin-linder.com/2016/03/24/intro-to-text-analysis.html), [2](https://github.com/flinder/text_analysis_tutorial)), Introduction to UNIX Command Line and PSU High Performance Computing (BDSS IGERT 2015, Materials: [1](http://fridolin-linder.com/2015/12/03/psu-hpc-cheatsheet.html), [2](http://fridolin-linder.com/2015/12/02/commandline-cheatsheet.html)), Introduction to Python (BDSS IGERT 2014).
+References
+----------------
+
+**Bruce Desmarais - Associate Professor**
+
+Department of Political Science
+
+Pennsylvania State University
+
+Phone: (814)-863-8859
+
+[bdesmarais@psu.edu](mailto:burtmonroe@psu.edu)
+
+**Burt Monroe – Professor, Political Science**
+
+Department of Political Science
+
+Pennsylvania State University
+
+Phone: (814)-865-9215
+
+[burtmonroe@psu.edu](mailto:burtmonroe@psu.edu)
+
+**Pablo Barberá - Assistant Professor**
+
+School of International Relations 
+
+University of Southern California
+
+[pbarbera@usc.edu](mailto:pbarbera@usc.edu)
+
 </div>
+
