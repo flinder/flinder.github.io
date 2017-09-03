@@ -31,16 +31,18 @@ $endif$
 
 %\setuppagenumbering[location={footer,center}]
 
-\setupbodyfont[11pt, helvetica]
+\setupbodyfont[11pt]
 
-\setupwhitespace[medium]
+%\setupwhitespace[medium]
+\setupwhitespace[small]
 
 \setupblackrules[width=31mm, color=rulecolor]
 
 \setuphead[chapter]      [style=\tfd]
 \setuphead[section]      [style=\tfd, color=titlegrey, align=middle]
 \setuphead[subsection]   [style=\tfb, color=sectioncolor, align=right,
-                          before={\leavevmode\blackrule\hspace}]
+                          before={\blank[2*big]\leavevmode\blackrule\hspace},
+                          after={\blank[big]}]
 \setuphead[subsubsection][style=\bf]
 
 $if(number-sections)$
