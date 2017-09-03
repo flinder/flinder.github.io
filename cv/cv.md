@@ -6,7 +6,7 @@ Fridolin Linder
 
 > The Pennsylvania State University, Department of Political Science, 230 Pond Laboratory
 
-> [fridolin.linder@gmail.com](mailto:fridolin.linder@gmail.com) - [fridolin-linder.com](http://fridolin-linder.com) - [github/flinder](https://github.com/flinder)
+> [fridolin.linder@gmail.com](mailto:fridolin.linder@gmail.com) - [fridolin-linder.com](http://fridolin-linder.com) - [github.com/flinder](https://github.com/flinder)
 
 ----
 
@@ -27,15 +27,15 @@ Open Source Software. (With [Zachary M. Jones](http://zmjones.com)).
 [Link](http://joss.theoj.org/papers/d29df349c8450ef958c0fde5bf164371).
 
 Human Rights Texts: Converting Human Rights Primary Source Documents into
-Data.(2015). PLOS ONE 10 (9). (With [Christopher J. Fariss](http://cfariss.com/),
+Data.(2015). PLoS ONE 10 (9). (With [Christopher J. Fariss](http://cfariss.com/),
 [Charles Crabtree](http://charlescrabtree.com), [Zachary M. Jones](http://zmjones.com),
 Megan Bied, Taranamoll Kaur, Ana Ross and Michael Tsai).
-[Link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0138935)
+[Link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0138935).
 
 Psychometric Analysis of Residence and MOOC Assessment. (2015). Paper Presented
-at the 2015 ASEE Annyal Conference and Exposition, Seattle Washington. (With Eric
+at the 2015 ASEE Annual Conference and Exposition, Seattle Washington. (With Eric
 Loken, Zita Oravecz and Conrad Tucker).
-[Link](https://peer.asee.org/psychometric-analysis-of-residence-and-mooc-assessments)
+[Link](https://peer.asee.org/psychometric-analysis-of-residence-and-mooc-assessments).
 
 Software
 ----------
@@ -43,15 +43,15 @@ Software
 
 [NetworkInference](https://github.com/flinder/NetworkInference): R package to infer latent diffusion networks.
 
-[edarf](https://github.com/zmjones/edarf): R package for exploratory data analysis with random forest (Contributor).
+[edarf](https://github.com/zmjones/edarf): R package for exploratory data analysis with random forests (Contributor).
 
 
 Selected Working Papers
 ----------
 
-Privacy Protection for Natural Language Records: Neural Generative Models for Releasing Synthetic Twitter Data. (With [Joshua Snoke](http://stat.psu.edu/people/jvs140@psu.edu) and [Alexander Ororbia](http://www.personal.psu.edu/ago109/)) [Link](https://arxiv.org/abs/1606.01151)
+Privacy Protection for Natural Language Records: Neural Generative Models for Releasing Synthetic Twitter Data. (With [Joshua Snoke](http://stat.psu.edu/people/jvs140@psu.edu) and [Alexander Ororbia](http://www.personal.psu.edu/ago109/)) [Link](https://arxiv.org/abs/1606.01151).
 
-Text as Policy: Measuring Policy Similarity Through Bill Text Reuse. (With [Bruce Desmarais](http://brucedesmarais.com/), [Matthew Burgess](https://scholar.google.com/citations?user=BJFgS_oAAAAJ&hl=en) and [Eugenia Giraudy](https://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=e://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=en)) [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2812607)
+Text as Policy: Measuring Policy Similarity Through Bill Text Reuse. (With [Bruce Desmarais](http://brucedesmarais.com/), [Matthew Burgess](https://scholar.google.com/citations?user=BJFgS_oAAAAJ&hl=en) and [Eugenia Giraudy](https://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=e://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=en)) [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2812607).
 
 
 Professional Experience
@@ -75,11 +75,11 @@ Technical Skills
 
 Research: Design and analysis of quantitative observational and experimental studies.
 
-Programming:  Python, R (proficient), C++, Javascript (familiar)
+Programming:  Python, R (proficient), C++, Javascript (familiar).
 
-Data Management: SQL, MongoDB
+Data Management: SQL, MongoDB.
 
-Languages: German, English, Spanish 
+Languages: German, English, Spanish.
 
 
 Research Assistance
@@ -88,7 +88,7 @@ Research Assistance
 *Text as Policy: Measuring Policy Similarity through Bill Text Reuse*, 
 [Prof. Bruce Desmarais](http://sites.psu.edu/desmaraisgroup/) (2015-2016).
 
-*Bayesian Measurement Models for Large Scale Data*, [Prof. Eric Loken](http://hhd.psu.edu/hdfs/directory/bio.aspx?id=149) and [Zita Oravecsz](http://www.cogsci.uci.edu/~zoravecz/bayes/index.php?site=BOUM) (BDSS IGERT Research Rotation, Department for Human Developmentand Family Studies, Penn State) (2014-2015).
+*Bayesian Measurement Models for Large Scale Data*, [Prof. Eric Loken](http://hhd.psu.edu/hdfs/directory/bio.aspx?id=149) and [Prof. Zita Oravecsz](http://www.cogsci.uci.edu/~zoravecz/bayes/index.php?site=BOUM) (BDSS IGERT Research Rotation, Department for Human Developmentand Family Studies, Penn State) (2014-2015).
 
 *Legislative Speech Project*, [Prof. Burt Monroe](http://polisci.la.psu.edu/people/blm24) (2013-2014).
 
@@ -134,9 +134,9 @@ Teaching
 
 *Workshops:*
 
-Introduction to Computational Text Analysis with Python (GEOG 596 Penn State 2016, Materials: [1](http://fridolin-linder.com/2016/03/24/intro-to-text-analysis.html), [2](https://github.com/flinder/text_analysis_tutorial))
+Introduction to Computational Text Analysis with Python (GEOG 596 Penn State 2016, Materials: [1](http://fridolin-linder.com/2016/03/24/intro-to-text-analysis.html), [2](https://github.com/flinder/text_analysis_tutorial)).
 
-Introduction to UNIX Command Line and PSU High Performance Computing (BDSS IGERT 2015, Materials: [1](http://fridolin-linder.com/2015/12/03/psu-hpc-cheatsheet.html), [2](http://fridolin-linder.com/2015/12/02/commandline-cheatsheet.html))
+Introduction to UNIX Command Line and PSU High Performance Computing (BDSS IGERT 2015, Materials: [1](http://fridolin-linder.com/2015/12/03/psu-hpc-cheatsheet.html), [2](http://fridolin-linder.com/2015/12/02/commandline-cheatsheet.html)).
 
 Introduction to Python (BDSS IGERT 2014).
 
@@ -161,7 +161,7 @@ Phone: (814)-863-8859
 
 [bdesmarais@psu.edu](mailto:burtmonroe@psu.edu)
 
-**Burt Monroe – Professor, Political Science**
+**Burt Monroe – Professor**
 
 Department of Political Science
 
