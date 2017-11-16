@@ -48,10 +48,13 @@ Software
 
 Selected Working Papers
 ----------
+Text as Policy: Measuring Policy Similarity Through Bill Text Reuse. (With [Bruce Desmarais](http://brucedesmarais.com/), [Matthew Burgess](https://scholar.google.com/citations?user=BJFgS_oAAAAJ&hl=en) and [Eugenia Giraudy](https://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=e://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=en)), review and resubmit, [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2812607).
 
-Privacy Protection for Natural Language Records: Neural Generative Models for Releasing Synthetic Twitter Data. (With [Joshua Snoke](http://stat.psu.edu/people/jvs140@psu.edu) and [Alexander Ororbia](http://www.personal.psu.edu/ago109/)) [Link](https://arxiv.org/abs/1606.01151).
+Improved Data Collection from Online Sources Using Query Expansion and Active
+Learning,
+under review, [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3026393).
 
-Text as Policy: Measuring Policy Similarity Through Bill Text Reuse. (With [Bruce Desmarais](http://brucedesmarais.com/), [Matthew Burgess](https://scholar.google.com/citations?user=BJFgS_oAAAAJ&hl=en) and [Eugenia Giraudy](https://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=e://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=en)) [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2812607).
+Privacy Protection for Natural Language Records: Neural Generative Models for Releasing Synthetic Twitter Data. (With [Joshua Snoke](http://stat.psu.edu/people/jvs140@psu.edu) and [Alexander Ororbia](http://www.personal.psu.edu/ago109/)), under review, [Link](https://arxiv.org/abs/1606.01151).
 
 
 Professional Experience
@@ -84,6 +87,8 @@ Languages: German, English, Spanish.
 
 Research Assistance
 ----------
+
+*Policy Diffusion* [Prof. Bruce Desmarais](http://sites.psu.edu/desmaraisgroup/) (2016-2017).
 
 *Text as Policy: Measuring Policy Similarity through Bill Text Reuse*, 
 [Prof. Bruce Desmarais](http://sites.psu.edu/desmaraisgroup/) (2015-2016).
@@ -146,12 +151,12 @@ Service
 
 President of the Graduate Association in Political Science at Penn State (2016-2017).
 
-*Reviewer:* American Political Science Review, American Sociological Review, Legislative Studies Quarterly.
+*Reviewer:* American Political Science Review, American Journal of Political Science, American Sociological Review, Legislative Studies Quarterly.
 
 References
 ----------------
 
-**Bruce Desmarais - Associate Professor**
+**Bruce Desmarais**
 
 Department of Political Science
 
@@ -161,7 +166,7 @@ Phone: (814)-863-8859
 
 [bdesmarais@psu.edu](mailto:burtmonroe@psu.edu)
 
-**Burt Monroe – Professor**
+**Burt Monroe**
 
 Department of Political Science
 
@@ -171,7 +176,7 @@ Phone: (814)-865-9215
 
 [burtmonroe@psu.edu](mailto:burtmonroe@psu.edu)
 
-**Pablo Barberá - Assistant Professor**
+**Pablo Barberá**
 
 School of International Relations 
 
