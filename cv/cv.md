@@ -32,9 +32,9 @@ Data.(2015). PLoS ONE 10 (9). (With [Christopher J. Fariss](http://cfariss.com/)
 Megan Bied, Taranamoll Kaur, Ana Ross and Michael Tsai).
 [Link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0138935).
 
-Psychometric Analysis of Residence and MOOC Assessment. (2015). Paper Presented
-at the 2015 ASEE Annual Conference and Exposition, Seattle Washington. (With Eric
-Loken, Zita Oravecz and Conrad Tucker).
+Psychometric Analysis of Residence and MOOC Assessment. (2015). Proceedings of
+the 2015 ASEE Annual Conference and Exposition, Seattle Washington. (With [Eric
+Loken](http://hhd.psu.edu/dsg/eric-loken-phd-assistant-director), [Zita Oravecz](https://sites.psu.edu/zitaoravecz/) and [Conrad Tucker](https://www.engr.psu.edu/datalab/people.html)).
 [Link](https://peer.asee.org/psychometric-analysis-of-residence-and-mooc-assessments).
 
 Software
@@ -63,7 +63,7 @@ Professional Experience
 Visiting Graduate Researcher, University of Zürich (Summer 2016): *Policy Diffusion of Smoking Ban Legislation in US and Switzerland*, Prof.
 [Fabrizio Gilardi](http://www.fabriziogilardi.org/).
 
-Eric and Wendy Schmidt Foundation, [Data Science for Social Good](http://dssg.io) 
+Eric and Wendy Schmidt Foundation, [Data Science for Social Good](https://dssg.uchicago.edu/) 
 Fellowship (2015).
 
 Bundestag (German Parliament), Internship/Assistant for [Silvia Schmidt, Member of Parliament](http://www.spdfraktion.de/abgeordnete/schmidt-eisleben?wp=17) (2008).
@@ -90,7 +90,7 @@ Research Assistance
 
 *Policy Diffusion* [Prof. Bruce Desmarais](http://sites.psu.edu/desmaraisgroup/) (2016-2017).
 
-*Text as Policy: Measuring Policy Similarity through Bill Text Reuse*, 
+*Text as Policy: Measuring Policy Similarity through Bill Text Rese*, 
 [Prof. Bruce Desmarais](http://sites.psu.edu/desmaraisgroup/) (2015-2016).
 
 *Bayesian Measurement Models for Large Scale Data*, [Prof. Eric Loken](http://hhd.psu.edu/hdfs/directory/bio.aspx?id=149) and [Prof. Zita Oravecsz](http://www.cogsci.uci.edu/~zoravecz/bayes/index.php?site=BOUM) (BDSS IGERT Research Rotation, Department for Human Developmentand Family Studies, Penn State) (2014-2015).
@@ -121,7 +121,7 @@ Awards, Honors and Fellowships
 
 Peter Schallmoser Award, Pennsylvania State University (2017).
 
-Eric and Wendy Schmidt Foundation, [Data Science for Social Good](http://dssg.io) 
+Eric and Wendy Schmidt Foundation, [Data Science for Social Good](https://dssg.uchicago.edu/) 
 Fellowship (2015).
 
 [Big Data Social Science](http://bdss.psu.edu/) IGERT Fellow (2014-2016).
@@ -130,7 +130,8 @@ Graduate Scholar Award, Pennsylvania State University (2013).
 
 Summer Research Grant, Pennsylvania State University (2014).
 
-Fellowship, <a href="http://www.bw-stipendium.de/en/home.html">Baden-Württemberg Foundation</a> (2012).
+Fellowship, [Baden-Württemberg
+Foundation](https://www.bwstiftung.de/startseite/) (2012).
 
 Performance Based Scholarship, University of Vienna (2010).
 
