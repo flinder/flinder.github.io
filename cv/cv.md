@@ -165,7 +165,7 @@ Pennsylvania State University
 
 Phone: (814)-863-8859
 
-[bdesmarais@psu.edu](mailto:burtmonroe@psu.edu)
+[bdesmarais@psu.edu](mailto:bdesmarais@psu.edu)
 
 **Burt Monroe**
 
