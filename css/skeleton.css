@@ -650,3 +650,11 @@ ul {
   padding-left: 40px;
   list-style-position: outside;
 }
+
+/* for wedding */
+.wdnghotelimg {
+    max-width: 100%;
+    max-height: 150px;
+}
+
+
