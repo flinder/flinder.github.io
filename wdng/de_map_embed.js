@@ -25,43 +25,55 @@ function initialize() {
     var markers = [
         {'name': 'Hesperiden garden',
          'location': [49.079693, 12.159665],
-         'info': "This is where the wedding is on Friday.",
+         'info': "Hier findet am Freitag die Hochzeit statt.",
          'icon': "purpleA"
         },
         {'name': "Frido's parents' house",
          'location': [48.984140, 12.133073],
-         'info': 'Base camp and brunch location for' +
-                 'Saturday',
+         'info': 'Base camp und Brunch am Samstag',
          'icon': "redB"
         },
         {'name': 'Hotel Luis',
          'location': [49.013975, 12.107465],
-         'info': 'One of our suggested hotels. Check out the ' +
-                 '<a href="/wdng/en_hotels.html">hotels page</a>' + 
-                 ' for more information.',
+         'info': 'Eines unserer vorgeschlagenen Hotels. Siehe die ' +
+                 '<a href="/wdng/de_hotels.html">Hotels Seite</a>' + 
+                 ' für mehr Info.',
          'icon': "orangeH"
         },
         {'name': 'Hotel VIII',
          'location': [49.020275, 12.101285],
-         'info': 'One of our suggested hotels. Check out the ' +
-                 '<a href="/wdng/en_hotels.html">hotels page</a>' + 
-                 ' for more information.',
+         'info': 'Eines unserer vorgeschlagenen Hotels. Siehe die ' +
+                 '<a href="/wdng/de_hotels.html">Hotels Seite</a>' + 
+                 ' für mehr Info.',
          'icon': "greenH"
         },
-        {'name': 'Private Accomodations',
+        {'name': 'Private Unterkünfte',
          'location': [48.985414, 12.139722],
-         'info': "There are a few rooms with friends of Frido's parents in" +
-                 'this general area. Check out the ' +
-                 '<a href="/wdng/en_hotels.html">hotels page</a>' + 
-                 ' for more information.',
+         'info': "Wir haben ein paar Übernachtungsgelegenheiten mit Freunden der Familie " +
+                 'Siehe die <a href="/wdng/en_hotels.html">Hotels Seite</a>' + 
+                 ' für mehr Info.',
          'icon': "greyH"
         },
         {'name': 'Star Inn Hotel',
          'location': [49.012546, 12.102309],
-         'info': 'One of our suggested hotels. Check out the ' +
-                 '<a href="/wdng/en_hotels.html">hotels page</a>' + 
-                 ' for more information.',
+         'info': 'Eines unserer vorgeschlagenen Hotels. Siehe die ' +
+                 '<a href="/wdng/de_hotels.html">Hotels Seite</a>' + 
+                 ' für mehr Info.',
          'icon': "blueH"
+        },
+        {'name': 'Gasthof Parzefall',
+         'location': [48.987893, 12.140968],
+         'info': 'Eines unserer vorgeschlagenen Hotels. Siehe die ' +
+                 '<a href="/wdng/de_hotels.html">Hotels Seite</a>' + 
+                 ' für mehr Info.',
+         'icon': "blackH"
+        },
+        {'name': 'Hotel Stocker',
+         'location': [48.966219, 12.167754],
+         'info': 'Eines unserer vorgeschlagenen Hotels. Siehe die ' +
+                 '<a href="/wdng/de_hotels.html">Hotels Seite</a>' + 
+                 ' für mehr Info.',
+         'icon': "whiteH"
         }
     ];
        
