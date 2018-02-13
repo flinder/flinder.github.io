@@ -144,8 +144,6 @@ Introduction to Computational Text Analysis with Python (GEOG 596 Penn State 201
 
 Introduction to UNIX Command Line and PSU High Performance Computing (BDSS IGERT 2015, Materials: [1](http://fridolin-linder.com/2015/12/03/psu-hpc-cheatsheet.html), [2](http://fridolin-linder.com/2015/12/02/commandline-cheatsheet.html)).
 
-Introduction to Python (BDSS IGERT 2014).
-
 
 Service
 -------------------
