@@ -22,22 +22,13 @@ Education
 
 Peer Reviewed Publications
 ----------
-Text as Policy: Measuring Policy Similarity Through Bill Text Reuse. (Forthcoming). Policy Studies Journal. (With [Bruce Desmarais](http://brucedesmarais.com/), [Matthew Burgess](https://scholar.google.com/citations?user=BJFgS_oAAAAJ&hl=en) and [Eugenia Giraudy](https://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=e://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=en)). [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2812607).
+Text as Policy: Measuring Policy Similarity Through Bill Text Reuse. (Forthcoming). *Policy Studies Journal*. (With [Bruce Desmarais](http://brucedesmarais.com/), [Matthew Burgess](https://scholar.google.com/citations?user=BJFgS_oAAAAJ&hl=en) and [Eugenia Giraudy](https://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=e://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=en)). [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2812607).
 
-Exploratory Data Analysis using Random Forests. (2016). Journal of
-Open Source Software. (With [Zachary M. Jones](http://zmjones.com)).
-[Link](http://joss.theoj.org/papers/d29df349c8450ef958c0fde5bf164371).
+Exploratory Data Analysis using Random Forests. (2016). *Journal of Open Source Software*. (With [Zachary M. Jones](http://zmjones.com)). [Link](http://joss.theoj.org/papers/d29df349c8450ef958c0fde5bf164371).
 
-Human Rights Texts: Converting Human Rights Primary Source Documents into
-Data.(2015). PLoS ONE 10 (9). (With [Christopher J. Fariss](http://cfariss.com/),
-[Charles Crabtree](http://charlescrabtree.com), [Zachary M. Jones](http://zmjones.com),
-Megan Bied, Taranamoll Kaur, Ana Ross and Michael Tsai).
-[Link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0138935).
+Human Rights Texts: Converting Human Rights Primary Source Documents into Data.(2015). *PLoS ONE* 10 (9). (With [Christopher J. Fariss](http://cfariss.com/), [Charles Crabtree](http://charlescrabtree.com), [Zachary M. Jones](http://zmjones.com), Megan Bied, Taranamoll Kaur, Ana Ross and Michael Tsai). [Link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0138935).
 
-Psychometric Analysis of Residence and MOOC Assessment. (2015). Proceedings of
-the 2015 ASEE Annual Conference and Exposition, Seattle Washington. (With [Eric
-Loken](http://hhd.psu.edu/dsg/eric-loken-phd-assistant-director), [Zita Oravecz](https://sites.psu.edu/zitaoravecz/) and [Conrad Tucker](https://www.engr.psu.edu/datalab/people.html)).
-[Link](https://peer.asee.org/psychometric-analysis-of-residence-and-mooc-assessments).
+Psychometric Analysis of Residence and MOOC Assessment. (2015). *Proceedings of the 2015 ASEE Annual Conference and Exposition*, Seattle Washington. (With [Eric Loken](http://hhd.psu.edu/dsg/eric-loken-phd-assistant-director), [Zita Oravecz](https://sites.psu.edu/zitaoravecz/) and [Conrad Tucker](https://www.engr.psu.edu/datalab/people.html)). [Link](https://peer.asee.org/psychometric-analysis-of-residence-and-mooc-assessments).
 
 Software
 ----------
