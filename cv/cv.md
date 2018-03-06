@@ -22,6 +22,8 @@ Education
 
 Peer Reviewed Publications
 ----------
+Text as Policy: Measuring Policy Similarity Through Bill Text Reuse. (Forthcoming). Policy Studies Journal. (With [Bruce Desmarais](http://brucedesmarais.com/), [Matthew Burgess](https://scholar.google.com/citations?user=BJFgS_oAAAAJ&hl=en) and [Eugenia Giraudy](https://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=e://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=en)). [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2812607).
+
 Exploratory Data Analysis using Random Forests. (2016). Journal of
 Open Source Software. (With [Zachary M. Jones](http://zmjones.com)).
 [Link](http://joss.theoj.org/papers/d29df349c8450ef958c0fde5bf164371).
@@ -48,8 +50,6 @@ Software
 
 Selected Working Papers
 ----------
-Text as Policy: Measuring Policy Similarity Through Bill Text Reuse. (With [Bruce Desmarais](http://brucedesmarais.com/), [Matthew Burgess](https://scholar.google.com/citations?user=BJFgS_oAAAAJ&hl=en) and [Eugenia Giraudy](https://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=e://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=en)), review and resubmit, [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2812607).
-
 Improved Data Collection from Online Sources Using Query Expansion and Active
 Learning,
 under review, [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3026393).
