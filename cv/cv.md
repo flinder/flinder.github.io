@@ -10,10 +10,15 @@ Fridolin Linder
 
 ----
 
+Appointments
+--------
+August 2018-: **Postdoctoral Associate**, New York University, Social Media and Political Participation Lab.
+
+
 Education
 ---------
 
-2013-(expected 2018):   **PhD, Political Science, Social Data Analytics**; Pennsylvania State University.
+2013-August 2018 (expected):   **PhD, Political Science, Social Data Analytics**; Pennsylvania State University.
 
 2011-2013:   **MA, Political Science**; University of Mannheim (Germany) (1 year of course work at Washington University in St. Louis).
 
@@ -30,6 +35,7 @@ Human Rights Texts: Converting Human Rights Primary Source Documents into Data.(
 
 Psychometric Analysis of Residence and MOOC Assessment. (2015). *Proceedings of the 2015 ASEE Annual Conference and Exposition*, Seattle Washington. (With [Eric Loken](http://hhd.psu.edu/dsg/eric-loken-phd-assistant-director), [Zita Oravecz](https://sites.psu.edu/zitaoravecz/) and [Conrad Tucker](https://www.engr.psu.edu/datalab/people.html)). [Link](https://peer.asee.org/psychometric-analysis-of-residence-and-mooc-assessments).
 
+
 Software
 ----------
 [ActiveStream](https://github.com/flinder/active_stream): Machine learning (active learning) and query expansion for the Twitter Streaming API for improved data collection.
@@ -42,10 +48,9 @@ Software
 Selected Working Papers
 ----------
 Improved Data Collection from Online Sources Using Query Expansion and Active
-Learning,
-under review, [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3026393).
+Learning, [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3026393).
 
-Privacy Protection for Natural Language Records: Neural Generative Models for Releasing Synthetic Twitter Data. (With [Joshua Snoke](http://stat.psu.edu/people/jvs140@psu.edu) and [Alexander Ororbia](http://www.personal.psu.edu/ago109/)), under review, [Link](https://arxiv.org/abs/1606.01151).
+Privacy Protection for Natural Language Records: Neural Generative Models for Releasing Synthetic Twitter Data. (With [Joshua Snoke](http://stat.psu.edu/people/jvs140@psu.edu) and [Alexander Ororbia](http://www.personal.psu.edu/ago109/)), [Link](https://arxiv.org/abs/1606.01151).
 
 
 Professional Experience
@@ -79,7 +84,7 @@ Languages: German, English, Spanish.
 Research Assistance
 ----------
 
-*Policy Diffusion* [Prof. Bruce Desmarais](http://sites.psu.edu/desmaraisgroup/) (2016-2017).
+*Governance and Administration in Networks Lab*, [Prof. Bruce Desmarais](http://sites.psu.edu/desmaraisgroup/) (2016-2017).
 
 *Text as Policy: Measuring Policy Similarity through Bill Text Rese*, 
 [Prof. Bruce Desmarais](http://sites.psu.edu/desmaraisgroup/) (2015-2016).
@@ -174,5 +179,6 @@ University of Southern California
 
 [pbarbera@usc.edu](mailto:pbarbera@usc.edu)
 
+<p style="text-align: center;"> Last updated: {update_date} </p>
 </div>
 
