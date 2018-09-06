@@ -4,9 +4,9 @@ Fridolin Linder
 
 ----
 
-> The Pennsylvania State University, Department of Political Science, 230 Pond Laboratory
+> New York University, Department of Political Science, Room 431, 19 West 4th Street
 
-> [fridolin.linder@gmail.com](mailto:fridolin.linder@gmail.com) - [fridolin-linder.com](http://fridolin-linder.com) - [github.com/flinder](https://github.com/flinder)
+> [fridolin.linder@nyu.edu](mailto:fridolin.linder@nyu.edu) - [fridolin-linder.com](http://fridolin-linder.com) - [github.com/flinder](https://github.com/flinder)
 
 ----
 
