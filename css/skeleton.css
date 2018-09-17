@@ -446,8 +446,10 @@ there.
 
 #headerImage img {
     margin-bottom: 50px;
-    max-width: 100%;
+    max-width: 90%;
+    max-height: 90%;
     height: auto;
+    align: left;
 }
 
 #contactImage img {    
