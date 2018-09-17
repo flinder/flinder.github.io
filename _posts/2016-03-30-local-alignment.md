@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing the Smith Waterman Local Alignment Algorithm"
 post_title: "Visualizing the Smith Waterman Local Alignment Algorithm"
 date: 2016-03-30
-image_source: /resources/local_alignment_visual/example.png
+image_source: /images/sw_dp_array.png
 excerpt: "A d3 visualization of the Smith Waterman Local Alignment Algorithm"
 comments: "true"
 category: "resources"
