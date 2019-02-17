@@ -445,9 +445,10 @@ there.
 }
 
 #headerImage img {
-    margin-bottom: 50px;
-    max-width: 90%;
-    max-height: 90%;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 00px;
+    max-width: 110%;
     height: auto;
     align: left;
 }
