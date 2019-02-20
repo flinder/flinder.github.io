@@ -18,7 +18,7 @@ August 2018-: **Postdoctoral Associate**, New York University, Social Media and 
 Education
 ---------
 
-2013-August 2018 (expected):   **PhD, Political Science, Social Data Analytics**; Pennsylvania State University.
+2013-2018:   **PhD, Political Science, Social Data Analytics**; Pennsylvania State University.
 
 2011-2013:   **MA, Political Science**; University of Mannheim (Germany) (1 year of course work at Washington University in St. Louis).
 
@@ -27,7 +27,10 @@ Education
 
 Peer Reviewed Publications
 ----------
-Text as Policy: Measuring Policy Similarity Through Bill Text Reuse. (Forthcoming). *Policy Studies Journal*. (With [Bruce Desmarais](http://brucedesmarais.com/), [Matthew Burgess](https://scholar.google.com/citations?user=BJFgS_oAAAAJ&hl=en) and [Eugenia Giraudy](https://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=e://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=en)). [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2812607).
+
+A New Database for Inferring Public Policy Innovativeness and Diffusion Networks. (Forthcoming). *Policy Studies Journal*. (With [Frederick Boehmke](http://myweb.uiowa.edu/fboehmke/), [Mark Brockway](https://www.markbrockway.com/), [Bruce Desmarais](http://brucedesmarais.com/), [Jeffrey Harden](https://politicalscience.nd.edu/people/jeff-harden/), Scott LaCombe und [Hanna Wallach](http://dirichlet.net/))
+
+Text as Policy: Measuring Policy Similarity Through Bill Text Reuse. (2018). *Policy Studies Journal*. (With [Bruce Desmarais](http://brucedesmarais.com/), [Matthew Burgess](https://scholar.google.com/citations?user=BJFgS_oAAAAJ&hl=en) and [Eugenia Giraudy](https://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=e://scholar.google.com/citations?user=GNwyyrsAAAAJ&hl=en)). [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2812607).
 
 Exploratory Data Analysis using Random Forests. (2016). *Journal of Open Source Software*. (With [Zachary M. Jones](http://zmjones.com)). [Link](http://joss.theoj.org/papers/d29df349c8450ef958c0fde5bf164371).
 
@@ -74,11 +77,11 @@ Technical Skills
 
 Research: Design and analysis of quantitative observational and experimental studies.
 
-Programming:  Python, R (proficient), C++, Javascript (familiar).
+Programming:  Python, R (proficient), C++, Javascript (familiar)
 
-Data Management: SQL, MongoDB.
+Data Management: SQL, MongoDB, ElasticSearch
 
-Languages: German, English, Spanish.
+Languages: German (proficient), English (proficient), Spanish (advanced), French (beginner)
 
 
 Research Assistance
